@@ -1,5 +1,11 @@
+import Header from "./Header/Header"
+import Filter from "./Filter/Filter"
+
 export default function home() {
   return (
-    <div>home</div>
+    <div>
+        <Header />
+        <Filter />
+    </div>
   )
 }
