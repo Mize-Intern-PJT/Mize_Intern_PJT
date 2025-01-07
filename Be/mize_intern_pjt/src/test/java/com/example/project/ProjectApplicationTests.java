@@ -1,10 +1,10 @@
-package com.example.mize_intern_pjt;
+package com.example.project;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MizeInternPjtApplicationTests {
+class ProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
