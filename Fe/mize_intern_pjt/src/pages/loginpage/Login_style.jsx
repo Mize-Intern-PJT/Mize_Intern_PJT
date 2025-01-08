@@ -19,6 +19,7 @@ export const Title = styled.div`
   text-align: center;
   font-size: 2.5rem;
   font-weight: ${Noto_Sans_KR.bold.weight};
+  color: ${PALETTE.MAIN_BLACK};
   line-height: 1.7; /* 줄 간격 조정 */
   /* white-space: pre-line;  */
 
