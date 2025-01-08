@@ -14,7 +14,7 @@ const Container = styled.div`
   max-width: 768px;
   min-height: 100vh;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   position: relative;
 `;
 

@@ -1,11 +1,11 @@
-import Header from "./Header/Header"
-import Filter from "./Filter/Filter"
+import Header from "./Header/Header";
+import Filter from "./Filter/Filter";
 
-export default function home() {
+export default function Home() {
   return (
     <div>
-        <Header />
-        <Filter />
+      <Header />
+      <Filter />
     </div>
-  )
+  );
 }
