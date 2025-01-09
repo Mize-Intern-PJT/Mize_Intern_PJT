@@ -3,7 +3,7 @@ import { Noto_Sans_KR } from "../../styles/fonts";
 import { PALETTE } from "../../styles/colors";
 
 export const Wrapper = styled.div`
-  width: 42%;
+  width: 45%;
   /* height: ; */
   aspect-ratio: 1 / 0.95;
   background-color: ${PALETTE.LIGHT_BLACK};
@@ -53,13 +53,13 @@ export const InfoText = styled.div`
 `;
 
 export const PlaceText = styled.div`
-  font-weight: ${Noto_Sans_KR.semiBold.weight};
-  font-size: 0.9rem;
+  font-weight: ${Noto_Sans_KR.medium.weight};
+  font-size: 0.8rem;
   color: ${PALETTE.MAIN_BLACK};
 `;
 
 export const StateText = styled.div`
   font-weight: ${Noto_Sans_KR.medium.weight};
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: ${PALETTE.MAIN_BLACK};
 `;
