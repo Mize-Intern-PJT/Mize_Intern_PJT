@@ -84,7 +84,7 @@ export default function Login() {
             <FontAwesomeIcon
               icon={faX}
               size="xs"
-              color="#837C7C"
+              color="#837C7C" // !!!! pallet로 변경
               onClick={handleClearUserId}
             />
           ) : (
