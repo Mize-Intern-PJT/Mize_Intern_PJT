@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import * as Styled from "./PowerOccupancyDeviceCard_style";
+import * as Styled from "./PlugPresenceCard_style";
 import power from "../../assets/power.png";
 import sensor from "../../assets/sensor.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,11 +7,7 @@ import { faPowerOff } from "@fortawesome/free-solid-svg-icons";
 import { faPerson } from "@fortawesome/free-solid-svg-icons";
 import { PALETTE } from "../../styles/colors";
 // type, place, state
-export default function PowerOccupancyDeviceCard({
-  type,
-  place,
-  initialstate,
-}) {
+export default function PlugPresenceCard({ type, place, initialstate }) {
   const [isActive, setIsActive] = useState(initialstate);
 
   const handleButtonChange = (e) => {

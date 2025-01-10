@@ -1,12 +1,17 @@
-import * as Styled from "./LightRemoteDeviceCard_style";
+import * as Styled from "./PolarSPOTMiniCard_style";
 import light from "../../assets/light.png";
 import remotecontrol from "../../assets/remotecontrol.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
-import { faTv } from "@fortawesome/free-solid-svg-icons";
-import { faSnowflake } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLightbulb,
+  faTv,
+  faSnowflake,
+} from "@fortawesome/free-solid-svg-icons";
 
-export default function LightRemoteDeviceCard({ type, place, initialstate }) {
+export default function PolarSPOTMiniCard0({ type, place, initialstate }) {
+  const location = "대회의실";
+  const typeName = "전등";
+
   return (
     <Styled.Wrapper>
       <Styled.Top>
@@ -15,15 +20,19 @@ export default function LightRemoteDeviceCard({ type, place, initialstate }) {
           alt={type === "light" ? "light" : "remotecontrol"}
         ></Styled.Icon>
         <Styled.InfoText>
-          <Styled.PlaceText>서버실 전등</Styled.PlaceText>
+          {/* span 태그로 2개하는게 좋을 듯 {Place} {Type} */}
+          <Styled.PlaceText>
+            {location} {typeName}
+          </Styled.PlaceText>
           <Styled.StateText>1 켜짐</Styled.StateText>
         </Styled.InfoText>
       </Styled.Top>
       <Styled.Bottom>
+        {/* API 연결하고 갯수만큼, device에 맞게 아이콘 */}
         <Styled.Button>
           <FontAwesomeIcon
             icon={type === "power" ? faLightbulb : faTv}
-            size="xl"
+            size="xs"
             color="white"
           />
         </Styled.Button>

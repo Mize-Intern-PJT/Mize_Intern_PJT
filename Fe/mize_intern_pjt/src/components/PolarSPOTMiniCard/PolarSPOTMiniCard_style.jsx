@@ -52,6 +52,7 @@ export const StateText = styled.div`
 export const Bottom = styled.div`
   display: flex;
   /* height: 100%; */
+  flex-grow: 1;
 `;
 
 export const Button = styled.div`
@@ -59,4 +60,7 @@ export const Button = styled.div`
   height: 100%;
   background-color: ${PALETTE.SUB_BLACK};
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
