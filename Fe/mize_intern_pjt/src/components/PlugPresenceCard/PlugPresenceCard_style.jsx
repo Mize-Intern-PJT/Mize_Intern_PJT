@@ -18,22 +18,21 @@ export const Wrapper = styled.div`
 `;
 
 export const Top = styled.div`
-  height: 55%;
+  height: 100%;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   justify-content: space-between;
   /* background-color: red; */
 `;
 
 export const Icon = styled.img`
   width: 45px;
-  /* height: 100%; */
+  height: 45px;
   /* margisn-top: 2%; */
 `;
 
 export const Button = styled.div`
-  width: 60px;
+  width: 70px;
   height: 100%;
   background-color: ${({ type, $isActive }) => {
     if (type === "power" && $isActive) return PALETTE.MAIN_BLUE;

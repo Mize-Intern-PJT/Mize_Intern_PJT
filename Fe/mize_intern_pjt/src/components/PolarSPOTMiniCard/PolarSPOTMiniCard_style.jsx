@@ -17,18 +17,26 @@ export const Wrapper = styled.div`
 `;
 
 export const Top = styled.div`
-  height: 55%;
+  height: 100%;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  justify-content: space-between;
+  justify-content: end;
+  /* justify-content: space-between; */
   /* background-color: red; */
+  padding: 7%;
 `;
 
 export const Icon = styled.img`
-  width: 45px;
+  width: 50%;
   /* height: 100%; */
   /* margisn-top: 2%; */
+  object-fit: scale-down;
+`;
+
+export const IconText = styled.div`
+  font-weight: ${Noto_Sans_KR.regular.weight};
+  font-size: 0.7rem;
+  color: ${PALETTE.MAIN_BLACK};
 `;
 
 export const InfoText = styled.div`
@@ -56,11 +64,24 @@ export const Bottom = styled.div`
 `;
 
 export const Button = styled.div`
-  width: 30%;
-  height: 100%;
+  /* width: 30%; */
+  height: 60%;
   background-color: ${PALETTE.SUB_BLACK};
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const ButtonContainer = styled.div`
+  /* width: 30%; */
+  /* height: 60%; */
+  align-items: center;
+  /* justify-content: center; */
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  padding-left: 7%;
 `;

@@ -6,7 +6,7 @@ export const HomeWrapper = styled.div`
   box-sizing: border-box;
   width: 100%;
   height: 100vh; // 일단 보류
-  padding: 13% 10%;
+  padding: 7% 7%;
 `;
 
 export const Header = styled.div``;
