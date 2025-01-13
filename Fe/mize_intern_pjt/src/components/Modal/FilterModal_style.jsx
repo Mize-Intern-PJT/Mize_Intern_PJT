@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   left: 0;
   width: 100%;
   max-width: 100vw; // 화면 너비를 초과하지 않도록
-  height: 30vh;
+  height: 40vh;
   background: white;
   box-sizing: border-box;
   padding: 20px;
@@ -20,11 +20,10 @@ export const Wrapper = styled.div`
   gap: 5%;
 
   // 슬라이드 애니메이션
-  animation: ${({ $isClosing }) => {
+  animation: ${({ $isClosing }) =>
     $isClosing
       ? "slideOut 0.3s ease-in-out forwards"
-      : "slideUp 0.3s ease-in-out forwards";
-  }};
+      : "slideUp 0.3s ease-in-out forwards"};
 
   @keyframes slideUp {
     from {
@@ -52,13 +51,11 @@ export const BlurContainer = styled.div`
   transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.55);
   /* backdrop-filter: blur(0.5px); */
   z-index: 1;
   // 자연스럽게 블러 사라짐
-  opacity: ${({ $isClosing }) => {
-    $isClosing ? 0 : 1;
-  }};
+  opacity: ${({ $isClosing }) => ($isClosing ? 0 : 1)};
   transition: opacity 0.3s ease-in-out;
 `;
 
@@ -93,9 +90,8 @@ export const RoomCategory = styled.div`
 `;
 
 export const RoomName = styled.div`
-  font-weight: ${({ $isSelected }) => {
-    $isSelected ? Noto_Sans_KR.bold.weight : Noto_Sans_KR.regular.weight;
-  }};
+  font-weight: ${({ $isSelected }) =>
+    $isSelected ? Noto_Sans_KR.bold.weight : Noto_Sans_KR.regular.weight};
   font-size: 0.85rem;
   color: ${PALETTE.MAIN_BLACK};
   padding: 1% 2%;
@@ -117,12 +113,14 @@ export const SubRoomCategory = styled.div`
 `;
 
 export const SubRoomName = styled.div`
-  /* font-weight: ${($isSelected) =>
-    $isSelected ? Noto_Sans_KR.bold.weight : Noto_Sans_KR.regular.weight}; */
+  font-weight: ${({ $isSelected }) =>
+    $isSelected ? Noto_Sans_KR.bold.weight : Noto_Sans_KR.regular.weight};
   font-size: 0.85rem;
   color: ${PALETTE.MAIN_BLACK};
-  padding: 1% 2%;
-  border-radius: 5px;
+  padding: 2% 4%;
+  border-radius: 16px;
+  width: auto;
+  height: 10%;
   /* 할까 말까 */
-  /* background-color: ${($isSelected) => ($isSelected ? "white" : null)}; */
+  background-color: ${({ $isSelected }) => ($isSelected ? "white" : "none")};
 `;

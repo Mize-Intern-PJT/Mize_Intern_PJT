@@ -18,19 +18,14 @@ const ROOM_CATEGORIES = {
   },
   conference2: {
     name: "공용 공간",
-    subCategories: [
-      "수면실",
-      "휴게실",
-      "서버실테스트테스트",
-      "수면실",
-      "휴게실",
-    ],
+    subCategories: ["수면실", "휴게실", "서버실테스트테스트", "탕비실"],
   },
 };
 
 export default function FilterModal({ onClose, onRoomSelect }) {
   const [isClosing, setIsClosing] = useState(false); // 모달창 슬라이드 애니메이션
   const [selectedRoom, setSelectedRoom] = useState("basic"); // 현재 선택된 방 카테고리
+  const [selectedSubRoom, setSelectedSubRoom] = useState(""); // 현재 선택된 하위 방 카테고리(기본값?)
 
   const handleModalClose = () => {
     setIsClosing(true); // 슬라이드 아웃 애니메이션 시작
@@ -42,10 +37,11 @@ export default function FilterModal({ onClose, onRoomSelect }) {
   };
 
   // 하위 카테고리 선택 시 실행되는 함수
-  const handleSubRoomSelect = (subRoom) => {
-    // Filter.jsx로 선택된 카테고리 정보 전달
-    onRoomSelect(selectedRoom, subRoom);
-    handleModalClose();
+  const handleSubRoomSelect = (subRoom, containSubRooms) => {
+    // Filter.jsx로 선택된 카테고리 정보 전달(선택된 방, 선택된 하위 방, 선택된 방에 속한 하위 방들)
+    onRoomSelect(selectedRoom, subRoom, containSubRooms);
+    setSelectedSubRoom(subRoom);
+    handleModalClose(); //  모달 닫기
   };
 
   return (
@@ -63,8 +59,8 @@ export default function FilterModal({ onClose, onRoomSelect }) {
             {Object.entries(ROOM_CATEGORIES).map(([key, category]) => (
               <Styled.RoomName
                 key={key}
-                $isSelected={selectedRoom === key}
-                onClick={() => setSelectedRoom(key)}
+                $isSelected={selectedRoom === key} // 현재 선택된 방인지 확인
+                onClick={() => setSelectedRoom(key)} // 선택된 방 업데이트
               >
                 {category.name}
               </Styled.RoomName>
@@ -72,12 +68,18 @@ export default function FilterModal({ onClose, onRoomSelect }) {
           </Styled.RoomCategory>
           {/* 하위 방 선택 */}
           <Styled.SubRoomCategory>
-            {ROOM_CATEGORIES[selectedRoom].subCategories.map((subCategory) => (
+            {ROOM_CATEGORIES[selectedRoom].subCategories.map((subRoom) => (
               <Styled.SubRoomName
-                key={subCategory}
-                onClick={() => handleSubRoomSelect(subCategory)}
+                key={subRoom}
+                $isSelected={selectedSubRoom === subRoom}
+                onClick={() =>
+                  handleSubRoomSelect(
+                    subRoom,
+                    ROOM_CATEGORIES[selectedRoom].subCategories // 속한 하위 방들
+                  )
+                } // 하위 방 선택
               >
-                {subCategory}
+                {subRoom}
               </Styled.SubRoomName>
             ))}
           </Styled.SubRoomCategory>
