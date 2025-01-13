@@ -51,8 +51,8 @@ export default function FilterModal({ onClose, onRoomSelect }) {
   return (
     <>
       {/* 모달 밖 영역 */}
-      <Styled.BlurContainer onClick={handleModalClose} isClosing={isClosing} />
-      <Styled.Wrapper isClosing={isClosing}>
+      <Styled.BlurContainer onClick={handleModalClose} $isClosing={isClosing} />
+      <Styled.Wrapper $isClosing={isClosing}>
         <Styled.Header>
           방 선택
           <FontAwesomeIcon icon={faX} onClick={handleModalClose} />
@@ -63,7 +63,7 @@ export default function FilterModal({ onClose, onRoomSelect }) {
             {Object.entries(ROOM_CATEGORIES).map(([key, category]) => (
               <Styled.RoomName
                 key={key}
-                isSelected={selectedRoom === key}
+                $isSelected={selectedRoom === key}
                 onClick={() => setSelectedRoom(key)}
               >
                 {category.name}
