@@ -3,7 +3,7 @@ import { Noto_Sans_KR } from "../../styles/fonts";
 import { PALETTE } from "../../styles/colors";
 
 export const Wrapper = styled.div`
-  width: 45%;
+  width: 48%;
   aspect-ratio: 1 / 0.95;
   background: linear-gradient(${PALETTE.GRADATION_1}, ${PALETTE.GRADATION_2});
   border-radius: 10px;
@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
   box-sizing: border-box;
   padding: 13px;
   gap: 20%;
+  margin-bottom: 5%;
   /* justify-content: space-between; */
 `;
 

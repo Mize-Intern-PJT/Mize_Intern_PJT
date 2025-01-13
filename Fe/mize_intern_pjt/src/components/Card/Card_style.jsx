@@ -7,13 +7,13 @@ export const Wrapper = styled.div`
   aspect-ratio: 1 / 0.95;
   background-color: ${PALETTE.LIGHT_BLACK};
   border-radius: 10px;
-  box-shadow: 3px 3px 5px 0px #eeeeee;
+  box-shadow: 3px 3px 5px 0px white;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   padding: 0px 0px 13px 13px; // %로 수정?
   gap: 10%;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 `;
 
 export const Top = styled.div`
