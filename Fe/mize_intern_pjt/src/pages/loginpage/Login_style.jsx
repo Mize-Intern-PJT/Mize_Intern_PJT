@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding: 30% 10%;
+  padding: 40% 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
 export const Title = styled.div`
   width: 100%;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: ${Noto_Sans_KR.bold.weight};
   color: ${PALETTE.MAIN_BLACK};
   line-height: 1.7; /* 줄 간격 조정 */
@@ -44,20 +44,17 @@ export const LoginWrapper = styled.div`
 
 export const Login = styled.div`
   width: 80%;
-  height: 2vh;
-  /* position: relative; */
+  height: 2.5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
   margin-bottom: 5%;
-  /* transform: translateY(-50%); */
   background-color: ${PALETTE.SUB_BLUE};
   border-radius: 5px;
 `;
 
 export const Icon = styled.img`
-  /* position: absolute; */
   width: 20px;
 `;
 
@@ -70,11 +67,12 @@ export const LoginText = styled.input`
   border-radius: 5px;
   /* margin-bottom: 5%; */
   background-color: ${PALETTE.SUB_BLUE};
+  font-weight: ${Noto_Sans_KR.regular.weight};
 
   &::placeholder {
     color: ${PALETTE.MIDDLE_BLACK};
     font-weight: ${Noto_Sans_KR.regular.weight};
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
   &:focus {
@@ -85,15 +83,15 @@ export const LoginText = styled.input`
 `;
 
 export const ErrorMessage = styled.div`
-  margin-top: 1%;
-  font-size: 0.8rem;
+  margin-top: 3%;
+  font-size: 0.85rem;
   font-weight: ${Noto_Sans_KR.regular.weight};
   color: red;
 `;
 
 export const LoginButton = styled.div`
   width: 80%;
-  height: 2vh;
+  height: 2.5vh;
   padding: 10px 10px;
   margin-top: 10%;
   background-color: ${PALETTE.MAIN_BLUE};

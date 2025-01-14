@@ -38,14 +38,14 @@ export const InfoText = styled.div`
 `;
 
 export const PlaceText = styled.div`
-  font-weight: ${Noto_Sans_KR.semiBold.weight};
-  font-size: 0.85rem;
+  font-weight: ${Noto_Sans_KR.medium.weight};
+  font-size: 0.8rem;
   color: ${PALETTE.MAIN_BLACK};
 `;
 
 export const TypeText = styled.div`
-  font-weight: ${Noto_Sans_KR.semiBold.weight};
-  font-size: 0.85rem;
+  font-weight: ${Noto_Sans_KR.regular.weight};
+  font-size: 0.8rem;
   color: ${PALETTE.MAIN_BLACK};
 `;
 

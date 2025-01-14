@@ -46,8 +46,8 @@ export default function Filter({ selectedRoom, data, onFilterChange }) {
   // };
 
   // 다른 하위 방 클릭시 실행될 함수(selected 바꾸기)
-  const handleSubRoomClick = (subRoom) => {
-    onFilterChange(selectedRoom.roomCategory, subRoom);
+  const handleSubRoomClick = (room) => {
+    onFilterChange(selectedRoom.roomCategory, room);
   };
 
   return (
@@ -80,14 +80,14 @@ export default function Filter({ selectedRoom, data, onFilterChange }) {
     // </Styled.Wrapper>
     <Styled.Wrapper>
       <Styled.SubRoomList>
-        {selectedRoom.subRoomList &&
-          selectedRoom.subRoomList.map((subroom) => (
+        {selectedRoom.roomList &&
+          selectedRoom.roomList.map((room) => (
             <Styled.SubRoomItem
-              key={subroom}
-              $isSelected={selectedRoom.subRoom === subroom} // 선택된 하위 방 표시
-              onClick={() => handleSubRoomClick(subroom)}
+              key={room}
+              $isSelected={selectedRoom.room === room} // 선택된 하위 방 표시
+              onClick={() => handleSubRoomClick(room)}
             >
-              {subroom}
+              {room}
             </Styled.SubRoomItem>
           ))}
       </Styled.SubRoomList>
@@ -95,6 +95,7 @@ export default function Filter({ selectedRoom, data, onFilterChange }) {
         onClick={onMenuClick}
         icon={faBars}
         color={PALETTE.MAIN_BLACK}
+        size="sm"
       />
 
       {/* FilterModal컴포넌트에 onClose props 전달 */}

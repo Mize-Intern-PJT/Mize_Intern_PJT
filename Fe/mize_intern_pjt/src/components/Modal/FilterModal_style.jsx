@@ -91,13 +91,13 @@ export const RoomCategory = styled.div`
 
 export const RoomName = styled.div`
   font-weight: ${({ $isSelected }) =>
-    $isSelected ? Noto_Sans_KR.bold.weight : Noto_Sans_KR.regular.weight};
-  font-size: 0.85rem;
+    $isSelected ? Noto_Sans_KR.medium.weight : Noto_Sans_KR.regular.weight};
+  font-size: 0.8rem;
   color: ${PALETTE.MAIN_BLACK};
-  padding: 1% 2%;
-  border-radius: 5px;
+  padding: 1% 4%;
+  border-radius: 16px;
   /* 할까 말까 */
-  /* background-color: ${(props) => (props.isSelected ? "white" : null)}; */
+  background-color: ${({ $isSelected }) => ($isSelected ? "white" : "none")};
 `;
 
 export const SubRoomCategory = styled.div`
@@ -114,13 +114,13 @@ export const SubRoomCategory = styled.div`
 
 export const SubRoomName = styled.div`
   font-weight: ${({ $isSelected }) =>
-    $isSelected ? Noto_Sans_KR.bold.weight : Noto_Sans_KR.regular.weight};
-  font-size: 0.85rem;
+    $isSelected ? Noto_Sans_KR.medium.weight : Noto_Sans_KR.regular.weight};
+  font-size: 0.8rem;
+  text-align: center;
   color: ${PALETTE.MAIN_BLACK};
   padding: 2% 4%;
   border-radius: 16px;
   width: auto;
   height: 10%;
-  /* 할까 말까 */
   background-color: ${({ $isSelected }) => ($isSelected ? "white" : "none")};
 `;

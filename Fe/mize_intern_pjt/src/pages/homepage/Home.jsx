@@ -14,6 +14,22 @@ import {
 // Home에서 선택된 방 관리
 // Filter와 FilterModal에 상태 전달
 
+// 연결된 iot 기기들을 불러오는 API 요청 (mount시에만)
+// useEffect(() => {
+//   async function fetchDevices() {
+//     try {
+//       const response = await fetch("API");
+//       const data = await response.json();
+//     } catch (error) {
+//       console.error("Error 메시지: ", error);
+//     } finally {
+//       setLoading(false);
+//     }
+//   }
+
+//   fetchDevices();
+// }, []);
+
 const data = {
   basic: {
     name: "기본",
@@ -40,19 +56,19 @@ export default function Home() {
   // 선택된 방 정보
   const [selectedRoom, setSelectedRoom] = useState({
     roomCategory: "basic",
-    subRoom: "기본",
-    subRoomList: data.basic.subCategories,
+    room: "기본",
+    roomList: data.basic.subCategories,
   });
 
   // const test = "conference1";
   // console.log("서브룸리스트 잘 되나", data[test].subCategories);
 
   // 필터에서 선택된 방 바꿀 때 함수
-  const handleFilterChange = (roomCategory, subRoom) => {
+  const handleFilterChange = (roomCategory, room) => {
     setSelectedRoom({
       roomCategory,
-      subRoom,
-      subRoomList: data[roomCategory]?.subCategories || [],
+      room,
+      roomList: data[roomCategory]?.subCategories || [],
     });
   };
 
@@ -66,7 +82,7 @@ export default function Home() {
         data={data}
         onFilterChange={handleFilterChange}
       />
-      <Devices selectedRoom={selectedRoom.subRoom} />
+      <Devices selectedRoom={selectedRoom.room} />
     </Styled.HomeWrapper>
   );
 }

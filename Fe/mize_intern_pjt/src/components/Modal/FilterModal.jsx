@@ -126,15 +126,15 @@ export default function FilterModal({
   // };
 
   // gpt 방 선택 함수
-  const handleRoomClick = (room) => {
-    const subRooms = data[room]?.subCategories || [];
-    const firstSubRoom = subRooms[0] || ""; // 첫 번째 하위 방 선택
-    onFilterChange(room, firstSubRoom); // 상태 변경 이벤트 전달
+  const handleRoomClick = (roomCategory) => {
+    const rooms = data[roomCategory]?.subCategories || [];
+    const firstRoom = rooms[0] || ""; // 첫 번째 하위 방 선택
+    onFilterChange(roomCategory, firstRoom); // 상태 변경 이벤트 전달
   };
 
   // gpt 하위 방 선택 함수
-  const handleSubRoomClick = (subRoom) => {
-    onFilterChange(selectedRoom.roomCategory, subRoom); // 하위 방 선택 처리
+  const handleSubRoomClick = (room) => {
+    onFilterChange(selectedRoom.roomCategory, room); // 하위 방 선택 처리
     // 모달 닫기
     handleModalClose();
   };
@@ -165,13 +165,13 @@ export default function FilterModal({
           </Styled.RoomCategory>
           {/* 하위 방 선택 */}
           <Styled.SubRoomCategory>
-            {selectedRoom.subRoomList.map((subRoom) => (
+            {selectedRoom.roomList.map((room) => (
               <Styled.SubRoomName
-                key={subRoom}
-                $isSelected={selectedRoom.subRoom === subRoom}
-                onClick={() => handleSubRoomClick(subRoom)} // 하위 방 선택
+                key={room}
+                $isSelected={selectedRoom.room === room}
+                onClick={() => handleSubRoomClick(room)} // 하위 방 선택
               >
-                {subRoom}
+                {room}
               </Styled.SubRoomName>
             ))}
           </Styled.SubRoomCategory>

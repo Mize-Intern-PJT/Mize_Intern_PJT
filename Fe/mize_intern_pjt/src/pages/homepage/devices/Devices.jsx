@@ -5,25 +5,19 @@ import PolarSPOTMiniCard from "../../../components/PolarSPOTMiniCard/PolarSPOTMi
 import EnvironmentalSensorCard from "../../../components/environmentalSensorCard/environmentalSensorCard";
 import { mockData } from "./test";
 
-export default function Devices() {
+export default function Devices({ selectedRoom }) {
   const [loading, setLoading] = useState(false);
-  // 연결된 iot 기기들을 불러오는 API 요청 (mount시에만)
-  // useEffect(() => {
-  //   async function fetchDevices() {
-  //     try {
-  //       const response = await fetch("API");
-  //       const data = await response.json();
-  //     } catch (error) {
-  //       console.error("Error 메시지: ", error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   }
+  const [devices, setDevices] = useState([]); // 필터된 devices들
 
-  //   fetchDevices();
-  // }, []);
+  // 필터링 (selectedRoom subroom이 바뀔때마다)
+  useEffect(() => {
+    const filteredDevices = mockData.filter(
+      (device) => device.room === selectedRoom
+    );
+    setDevices(filteredDevices);
+  }, [selectedRoom]);
 
-  // 로딩상태?
+  // 로딩상태
   if (loading) {
     return <div>로딩중</div>;
   }
