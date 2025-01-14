@@ -47,7 +47,7 @@ export default function Login() {
         password: loginInput.password,
       });
       if (res.status === 200) {
-        nav("/home"); // 홈 화면으로 이동
+        nav("/home", { replace: true }); // 홈 화면으로 이동
         console.log(res.data);
       }
     } catch (error) {
@@ -61,7 +61,7 @@ export default function Login() {
       setError("아이디와 비밀번호를 입력해주세요.");
       return;
     }
-    nav("/home");
+    nav("/home", { replace: true });
   };
 
   return (

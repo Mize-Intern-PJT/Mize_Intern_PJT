@@ -50,6 +50,7 @@ const data = {
 };
 
 export default function Home() {
+  window.history.forward();
   const title = "마이즈";
   // 초기 방 정보
   const initialRoom = "기본";

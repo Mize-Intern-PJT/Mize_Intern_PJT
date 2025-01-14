@@ -6,12 +6,11 @@ export const Wrapper = styled.div`
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding: 40% 10%;
+  padding: 25% 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* min-height: 100vh; */
 `;
 
 export const Title = styled.div`
