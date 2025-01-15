@@ -1,0 +1,4 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "dotnet.defaultSolution": "BlazorApp1.sln"
+}

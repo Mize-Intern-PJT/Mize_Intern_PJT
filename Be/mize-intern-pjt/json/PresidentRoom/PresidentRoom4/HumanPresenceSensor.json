@@ -1,0 +1,30 @@
+{
+    "status": "ok",
+    "message": {
+        "ver": "0.0.0.0",
+        "fullCls": "ZG#TS06012",
+        "data": {
+            "M1": {
+                "type": 79,
+                "valts": 1736919503298,
+                "val": 1
+            },
+            "Z1": {
+                "type": 95,
+                "valts": 1736919842032,
+                "val": 95
+            }
+        },
+        "me": "3c94",
+        "zg_homeid": 5315,
+        "zg_nodeid": 43741,
+        "lHeart": 1736922314,
+        "stat": 1,
+        "agt": "BjMAADSYeAEAAAwxNAz__w",
+        "devtype": "ZG#TS06012",
+        "name": "박인수본부장 재실",
+        "lDbm": -33
+    },
+    "code": 0,
+    "id": "101"
+}
