@@ -15,11 +15,14 @@
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@vitejs/plugin-basic-ssl": "^1.2.0",
     "axios": "^1.7.9",
+    "mkcert": "^3.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.1",
-    "styled-components": "^6.1.14"
+    "styled-components": "^6.1.14",
+    "vite-plugin-mkcert": "^1.17.6"
   },
   "devDependencies": {
     "@types/react": "^18.3.1",
