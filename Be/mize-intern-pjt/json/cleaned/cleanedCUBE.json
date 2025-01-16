@@ -29,6 +29,7 @@
       },
       "lHeart": 1736929416,
       "devtype": "SL_SC_BE",
+      "agt": "BjMAADSYeAEAAAteSQz__w",
       "name": "대회의실 환경센서"
     }
   },
@@ -62,6 +63,7 @@
       },
       "lHeart": 1736918202,
       "devtype": "SL_SC_BE",
+      "agt": "BjMAADSYeAEAAAwxNAz__w",
       "name": "김영훈대표 환경센서"
     }
   },
@@ -95,6 +97,7 @@
       },
       "lHeart": 1736922127,
       "devtype": "SL_SC_BE",
+      "agt": "BjMAADSYeAEAAAwxNAz__w",
       "name": "김영철이사 환경센서 "
     }
   },
@@ -128,6 +131,7 @@
       },
       "lHeart": 1736922066,
       "devtype": "SL_SC_BE",
+      "agt": "BjMAADSYeAEAAAwxNAz__w",
       "name": "김혜진이사 환경센서"
     }
   },
@@ -161,6 +165,7 @@
       },
       "lHeart": 1736930021,
       "devtype": "SL_SC_BE",
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
       "name": "수면/샤워(여) 환경 센서"
     }
   },
@@ -194,6 +199,7 @@
       },
       "lHeart": 1736930125,
       "devtype": "SL_SC_BE",
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
       "name": "수면/샤워(남) 환경 센서"
     }
   }

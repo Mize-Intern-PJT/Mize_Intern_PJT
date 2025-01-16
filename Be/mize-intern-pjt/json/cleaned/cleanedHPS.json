@@ -15,6 +15,7 @@
       },
       "lHeart": 1736929599,
       "devtype": "ZG#TS06012",
+      "agt": "BjMAADSYeAEAAAteSQz__w",
       "name": "대회의실 재실"
     }
   },
@@ -34,6 +35,7 @@
       },
       "lHeart": 1736929599,
       "devtype": "ZG#TS06012",
+      "agt": "BjMAADSYeAEAAAteSQz__w",
       "name": "2번 소회의실 재실"
     }
   },
@@ -53,6 +55,7 @@
       },
       "lHeart": 1736929599,
       "devtype": "ZG#TS06012",
+      "agt": "BjMAADSYeAEAAAteSQz__w",
       "name": "1번 소회의실 재실"
     }
   },
@@ -72,6 +75,7 @@
       },
       "lHeart": 1736922314,
       "devtype": "ZG#TS06012",
+      "agt": "BjMAADSYeAEAAAwxNAz__w",
       "name": "박인수본부장 재실"
     }
   },
@@ -91,6 +95,7 @@
       },
       "lHeart": 1736922184,
       "devtype": "ZG#TS06012",
+      "agt": "BjMAADSYeAEAAAwxNAz__w",
       "name": "김혜진이사 재실"
     }
   },
@@ -110,6 +115,7 @@
       },
       "lHeart": 1736922099,
       "devtype": "ZG#TS06012",
+      "agt": "BjMAADSYeAEAAAwxNAz__w",
       "name": "김영철이사 재실"
     }
   },
@@ -129,6 +135,7 @@
       },
       "lHeart": 1736917930,
       "devtype": "ZG#TS06012",
+      "agt": "BjMAADSYeAEAAAwxNAz__w",
       "name": "김영훈대표 재실"
     }
   },
@@ -148,6 +155,7 @@
       },
       "lHeart": 1736930469,
       "devtype": "ZG#TS06012",
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
       "name": "스낵바 재실"
     }
   },
@@ -167,6 +175,7 @@
       },
       "lHeart": 1736930347,
       "devtype": "ZG#TS06012",
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
       "name": "서버실 재실"
     }
   },
@@ -186,6 +195,7 @@
       },
       "lHeart": 1736930224,
       "devtype": "ZG#TS06012",
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
       "name": "수면/샤워(여) 재실"
     }
   },
@@ -205,6 +215,7 @@
       },
       "lHeart": 1736930105,
       "devtype": "ZG#TS06012",
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
       "name": "수면/샤워(남) 재실"
     }
   },
@@ -223,6 +234,7 @@
         }
       },
       "lHeart": 1736930105,
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
       "devtype": "ZG#TS06012",
       "name": "집중실2  재실"
     }
@@ -243,6 +255,7 @@
       },
       "lHeart": 1736930104,
       "devtype": "ZG#TS06012",
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
       "name": "집중실1 재실"
     }
   }

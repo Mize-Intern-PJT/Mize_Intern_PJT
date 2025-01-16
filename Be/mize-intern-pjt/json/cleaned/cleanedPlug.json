@@ -17,6 +17,7 @@
       },
       "lHeart": 1736929524,
       "devtype": "SL_OE_DE",
+      "agt": "BjMAADSYeAEAAAteSQz__w",
       "name": "대회의실 플러그"
     }
   },
@@ -38,6 +39,7 @@
       },
       "lHeart": 1736930797,
       "devtype": "SL_OE_DE",
+      "agt": "BjMAADSYeAEAAAwxNAz__w",
       "name": "김혜진이사 플러그"
     }
   },
@@ -59,6 +61,7 @@
       },
       "lHeart": 1736930164,
       "devtype": "SL_OE_DE",
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
       "name": "수면/샤워(남) 플러그"
     }
   },
@@ -80,6 +83,7 @@
       },
       "lHeart": 1736930277,
       "devtype": "SL_OE_DE",
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
       "name": "수면/샤워(여) 플러그"
     }
   },
@@ -101,6 +105,7 @@
       },
       "lHeart": 1736930323,
       "devtype": "SL_OE_DE",
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
       "name": "서버실 플러그"
     }
   }
