@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const app = express();
-const port = 3001;
+const port = 3002;
 
 const getData = () => {
   const files = [
@@ -28,7 +28,7 @@ const getData = () => {
   return allData;
 };
 
-app.get('/api/', (req, res) => {
+app.get('/api', (req, res) => {
   const data = getData();
   res.json(data);
 });
