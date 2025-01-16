@@ -3,7 +3,7 @@ import Header from "./Header/Header";
 import Filter from "./Filter/Filter";
 import PlugPresenceCard from "../../components/PlugPresenceCard/PlugPresenceCard";
 import PolarSPOTMiniCard from "../../components/PolarSPOTMiniCard/PolarSPOTMiniCard";
-import EnvironmentalSensorCard from "../../components/environmentalSensorCard/environmentalSensorCard";
+import EnvironmentalSensorCard from "../../components/EnvironmentalSensorCard/EnvironmentalSensorCard";
 import Devices from "./devices/Devices";
 import { useState } from "react";
 import {
