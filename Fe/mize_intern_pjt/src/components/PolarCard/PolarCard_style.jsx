@@ -33,8 +33,8 @@ export const Button = styled.div`
   align-items: center;
   justify-content: center;
   // transient props ($) React node나 DOM 요소에 prop이 반영되지 않도록
-  background-color: ${({ $isActive }) =>
-    $isActive ? PALETTE.MAIN_BLUE : PALETTE.SUB_BLACK};
+  background-color: ${({ $isOn }) =>
+    $isOn ? PALETTE.MAIN_BLUE : PALETTE.SUB_BLACK};
 `;
 
 export const ButtonContainer = styled.div`

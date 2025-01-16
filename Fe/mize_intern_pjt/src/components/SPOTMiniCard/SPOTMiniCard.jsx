@@ -1,31 +1,31 @@
-import * as Styled from "./PolarSPOTMiniCard_style";
+import * as Styled from "./SPOTMiniCard_style";
 import Card from "../Card/Card";
 import tv from "../../assets/tv.png";
 import newaircondition from "../../assets/newaircondition.png";
 import { useState } from "react";
 
-export default function SPOTMiniCard({ name, agt, me, data }) {
+export default function SPOTMiniCard({ name, agt, data }) {
   // 대회의실만 에어컨, tv 모두 다 있음
-  const conferenceRoom = me === "61b1";
+  const conferenceRoom = name === "대회의실 리모컨 제어";
   const [isOn, setIsOn] = useState(
     conferenceRoom
       ? [
-          { subName: "에어컨", state: data.P1.val },
-          { subName: "TV", state: data.P2.val },
+          { subName: "에어컨", status: data.P1.val },
+          { subName: "TV", status: data.P2.val },
         ]
-      : [{ subName: "에어컨", state: data.P1?.val === 1 }]
+      : [{ subName: "에어컨", status: data.P1?.val === 1 }]
   );
 
   // status 관리
   // 해당 번호의 status를 바꿈
   const handleButton = (index) => {
     setIsOn((prevState) => {
-      const updatedStates = [...prevState];
-      updatedStates[index] = {
-        ...updatedStates[index],
-        state: !updatedStates[index].state,
+      const updatedStatus = [...prevState];
+      updatedStatus[index] = {
+        ...updatedStatus[index],
+        status: !updatedStatus[index].status,
       };
-      return updatedStates;
+      return updatedStatus;
     });
   };
 

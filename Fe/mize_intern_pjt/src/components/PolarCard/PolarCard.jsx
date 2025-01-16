@@ -1,16 +1,16 @@
-import * as Styled from "./PolarSPOTMiniCard_style";
+import * as Styled from "./PolarCard_style";
 import Card from "../Card/Card";
 import lightbulb from "../../assets/lightbulb.png";
 import { useState } from "react";
 
-export default function PolarCard({ devtype, name, agt, me, data }) {
-  // 전등이 1구인지 2구인지
-  const isDual = devtype === "SL_SW_ND2";
+export default function PolarCard({ data, name, agt }) {
+  // P3가 있으면 2구, 없으면 1구구
+  const isDual = data.P3 !== undefined;
   // 1구 2구에 따라 분리
   const initalState = isDual
     ? [
         { subName: "스위치1", state: data.P1?.val === 1 },
-        { subName: "스위치2", state: data.P2?.val === 1 },
+        { subName: "스위치2", state: data.P3?.val === 1 },
       ]
     : [{ subName: "스위치1", state: data.P1?.val === 1 }];
 

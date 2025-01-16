@@ -19,8 +19,8 @@ export const Icon = styled.img`
 export const Button = styled.div`
   width: 70px;
   height: 100%;
-  background-color: ${({ $isPresense }) =>
-    $isPresense ? PALETTE.MAIN_YELLOW : PALETTE.SUB_BLACK};
+  background-color: ${({ $isPresenece }) =>
+    $isPresenece ? PALETTE.MAIN_YELLOW : PALETTE.SUB_BLACK};
   border-radius: 0 10px;
   display: flex;
   align-items: center;
