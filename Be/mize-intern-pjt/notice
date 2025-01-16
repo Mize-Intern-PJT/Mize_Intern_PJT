@@ -1,0 +1,43 @@
+PolarSwitch(1way)
+P1 스위치 제어  P2 전기량
+type%2==1 켜져있는 상태
+type%2==0 꺼져있는 상태
+type=0x81; val=1; on
+type=0x80; val=0; off
+v:실제값
+valts:타임스탬프
+lHeart:타임스탬프
+lDbm:신호강도
+
+PolarSwitch(2way)
+type%2==1은 켜짐(ignoring val)을 나타내고, 
+type%2==0은 꺼짐(ignoring val)을 나타냅니다; 
+P1은 첫 번째 스위치 제어 포트를 나타냅니다; 
+P2는 두 번째 스위치 제어 포트를 나타냅니다;
+
+CUBE
+T:온도 
+Val은 원래 온도 값을 나타내며, 이는 v*10입니다 (UoM: °C)
+V:습도
+Val은 원래 습도 값을 나타내며, 습도 값은 v*10입니다 (Unit: %)
+Z:조도
+Val은 원래 조도를 나타냅니다. (UoM: lux)
+H:전기량-사용안함
+
+HumanPresenceSensor
+Z1: 조도
+val은 조도
+M1: 재실여부
+val=1은 존재를 식별합니다
+
+Plug
+P1:on/off
+type%2==1 켜져있는 상태
+type%2==0 꺼져있는 상태
+type=0x81; val=1; on
+type=0x80; val=0; off
+P3:전력량
+참고: 값 유형은 IEEE 754 부동 소수점 번호를 나타내는 32비트 정수입니다. 
+예를 들어 1024913643은 부동 소수점 값 0.03685085를 나타냅니다.
+
+
