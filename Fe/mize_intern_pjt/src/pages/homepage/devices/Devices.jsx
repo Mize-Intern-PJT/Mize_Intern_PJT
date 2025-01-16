@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import * as Styled from "./Devices_style";
 import PlugPresenceCard from "../../../components/PlugPresenceCard/PlugPresenceCard";
 import PolarSPOTMiniCard from "../../../components/PolarSPOTMiniCard/PolarSPOTMiniCard";
-import EnvironmentalSensorCard from "../../../components/environmentalSensorCard/environmentalSensorCard";
+import EnvironmentalSensorCard from "../../../components/EnvironmentalSensorCard/EnvironmentalSensorCard";
 import { mockData } from "./test";
 
 export default function Devices({ selectedRoom }) {
