@@ -1,0 +1,395 @@
+[
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 78,
+                    "valts": 1735899883488,
+                    "val": 0
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736927832949,
+                    "val": 127
+                }
+            },
+            "me": "61b2",
+            "zg_homeid": 35790,
+            "zg_nodeid": 38993,
+            "lHeart": 1736929599,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAteSQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "대회의실 재실",
+            "lDbm": -45
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736929588802,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736928935907,
+                    "val": 34
+                }
+            },
+            "me": "61b3",
+            "zg_homeid": 35790,
+            "zg_nodeid": 57436,
+            "lHeart": 1736929599,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAteSQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "2번 소회의실 재실",
+            "lDbm": -51
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736926852625,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736928982802,
+                    "val": 30
+                }
+            },
+            "me": "61b4",
+            "zg_homeid": 35790,
+            "zg_nodeid": 45415,
+            "lHeart": 1736929599,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAteSQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "1번 소회의실 재실",
+            "lDbm": -53
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736919503298,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736919842032,
+                    "val": 95
+                }
+            },
+            "me": "3c94",
+            "zg_homeid": 5315,
+            "zg_nodeid": 43741,
+            "lHeart": 1736922314,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "ZG#TS06012",
+            "name": "박인수본부장 재실",
+            "lDbm": -33
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736919496949,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736916258832,
+                    "val": 56
+                }
+            },
+            "me": "3c93",
+            "zg_homeid": 5315,
+            "zg_nodeid": 28546,
+            "lHeart": 1736922184,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "ZG#TS06012",
+            "name": "김혜진이사 재실",
+            "lDbm": -39
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736909703711,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736922099322,
+                    "val": 84
+                }
+            },
+            "me": "3c92",
+            "zg_homeid": 5315,
+            "zg_nodeid": 50738,
+            "lHeart": 1736922099,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "ZG#TS06012",
+            "name": "김영철이사 재실",
+            "lDbm": -48
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736916718357,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736917809438,
+                    "val": 369
+                }
+            },
+            "me": "3c91",
+            "zg_homeid": 5315,
+            "zg_nodeid": 22743,
+            "lHeart": 1736917930,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "ZG#TS06012",
+            "name": "김영훈대표 재실",
+            "lDbm": -44
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 78,
+                    "valts": 1736929909047,
+                    "val": 0
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736928811344,
+                    "val": 176
+                }
+            },
+            "me": "86cb",
+            "zg_homeid": 46140,
+            "zg_nodeid": 46238,
+            "lHeart": 1736930469,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "스낵바 재실",
+            "lDbm": -43
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736131184457,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736926711997,
+                    "val": 1
+                }
+            },
+            "me": "86c6",
+            "zg_homeid": 46140,
+            "zg_nodeid": 129,
+            "lHeart": 1736930347,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "서버실 재실",
+            "lDbm": -41
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736929496193,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736899339243,
+                    "val": 24
+                }
+            },
+            "me": "86d2",
+            "zg_homeid": 46140,
+            "zg_nodeid": 41294,
+            "lHeart": 1736930224,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "수면/샤워(여) 재실",
+            "lDbm": -54
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736930035094,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736910101072,
+                    "val": 0
+                }
+            },
+            "me": "86d1",
+            "zg_homeid": 46140,
+            "zg_nodeid": 20265,
+            "lHeart": 1736930105,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "수면/샤워(남) 재실",
+            "lDbm": -49
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 78,
+                    "valts": 1736927461098,
+                    "val": 0
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736842522077,
+                    "val": 2
+                }
+            },
+            "me": "86cf",
+            "zg_homeid": 46140,
+            "zg_nodeid": 37810,
+            "lHeart": 1736930105,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "집중실2  재실",
+            "lDbm": -40
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 78,
+                    "valts": 1736928991243,
+                    "val": 0
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736899439088,
+                    "val": 18
+                }
+            },
+            "me": "86cd",
+            "zg_homeid": 46140,
+            "zg_nodeid": 37786,
+            "lHeart": 1736930104,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "집중실1 재실",
+            "lDbm": -45
+        },
+        "code": 0,
+        "id": "101"
+    }
+
+
+    
+]
