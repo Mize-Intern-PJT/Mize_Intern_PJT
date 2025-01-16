@@ -1,10 +1,12 @@
 import { VitePWA } from "vite-plugin-pwa";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import mkcert from "vite-plugin-mkcert";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    mkcert(),
     react(),
     VitePWA({
       registerType: "autoUpdate",
@@ -16,10 +18,24 @@ export default defineConfig({
       },
 
       manifest: {
-        name: "mize_intern_pjt",
-        short_name: "mize_intern_pjt",
-        description: "mize_intern_pjt",
+        name: "IoTControl",
+        short_name: "IoTControl",
+        description: "Mize_Intern_Pjt_IoTControl",
         theme_color: "#ffffff",
+        start_url: "/",
+        display: "standalone",
+        icons: [
+          {
+            src: "/icon-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "/icon-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+        ],
       },
 
       workbox: {
@@ -36,6 +52,10 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    https: true,
+    host: true,
+  },
   resolve: {
     alias: [
       { find: "@components", replacement: "/src/components" },
