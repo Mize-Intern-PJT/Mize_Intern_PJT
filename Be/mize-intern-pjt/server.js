@@ -1,23 +1,27 @@
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
+const express = require("express");
+const fs = require("fs");
+const path = require("path");
 const app = express();
 const port = 3002;
+const cors = require("cors");
+
+app.use(cors());
 
 const getData = () => {
   const files = [
-    'cleanedCUBE.json', 
-    'cleanedHPS.json', 
-    'cleancleanedPlug.json', 
-    'cleanedPolar1.json', 
-    'cleanedPolar2.json', 
-    'cleanedSpot.json'
+    "cleanedCUBE.json",
+    "cleanedHPS.json",
+    "cleanedPlug.json",
+    "cleanedPolar1.json",
+    "cleanedPolar2.json",
+    "cleanedSpot.json",
   ];
   let allData = [];
 
-  files.forEach(file => {
+  files.forEach((file) => {
+    const filePath = path.join(__dirname, "json/cleaned", file);
     try {
-      const data = fs.readFileSync(path.join(__dirname, file), 'utf8');
+      const data = fs.readFileSync(filePath, "utf8");
       const jsonData = JSON.parse(data);
       allData = allData.concat(jsonData);
     } catch (err) {
@@ -28,7 +32,7 @@ const getData = () => {
   return allData;
 };
 
-app.get('/api', (req, res) => {
+app.get("/api", (req, res) => {
   const data = getData();
   res.json(data);
 });
