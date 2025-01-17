@@ -18,6 +18,7 @@
       "lHeart": 1736929635,
       "agt": "BjMAADSYeAEAAAteSQz__w",
       "devtype": "SL_P_IR",
+      "me": "61b1", 
       "name": "대회의실 리모컨 제어"
     }
   },
@@ -39,6 +40,7 @@
       },
       "lHeart": 1736930633,
       "agt": "BjMAADSYeAEAAAwxNAz__w",
+      "me": "3c98", 
       "devtype": "SL_P_IR",
       "name": "김혜진이사 리모컨 제어"
     }
@@ -62,6 +64,7 @@
       "lHeart": 1736929889,
       "agt": "BjMAADSYeAEAAAwlEQz__w",
       "devtype": "SL_P_IR",
+      "me": "86d4", 
       "name": "수면/샤워(남) 리모컨 제어"
     }
   },
@@ -84,6 +87,7 @@
       "lHeart": 1736930181,
       "devtype": "SL_P_IR",
       "agt": "BjMAADSYeAEAAAwlEQz__w",
+      "me": "86d7", 
       "name": "수면/샤워(여) 리모컨 제어"
     }
   },
@@ -105,6 +109,7 @@
       },
       "lHeart": 1736930110,
       "devtype": "SL_P_IR",
+      "me": "86c9", 
       "agt": "BjMAADSYeAEAAAwlEQz__w",
       "name": "서버실 리모컨 제어"
     }

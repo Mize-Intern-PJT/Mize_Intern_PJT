@@ -11,6 +11,7 @@
       },
       "lHeart": 1736929116,
       "devtype": "SL_SW_ND1",
+      "me": "61a9", 
       "agt": "BjMAADSYeAEAAAteSQz__w",
       "name": "대회의실 전등"
     }
@@ -28,6 +29,7 @@
       "lHeart": 1736928685,
       "agt": "BjMAADSYeAEAAAteSQz__w",
       "devtype": "SL_SW_ND1",
+      "me": "61ab", 
       "name": "1번 소회의실 전등"
     }
   },
@@ -42,6 +44,7 @@
         }
       },
       "lHeart": 1736929079,
+      "me": "61aa", 
       "devtype": "SL_SW_ND1",
       "agt": "BjMAADSYeAEAAAteSQz__w",
       "name": "2번 소회의실 전등"
@@ -59,6 +62,7 @@
       },
       "lHeart": 1736917521,
       "devtype": "SL_SW_ND1",
+      "me": "3c8d", 
       "agt": "BjMAADSYeAEAAAwxNAz__w",
       "name": "김영훈대표 전등"
     }
@@ -75,6 +79,7 @@
       },
       "lHeart": 1736921161,
       "devtype": "SL_SW_ND1",
+      "me": "3c8e", 
       "agt": "BjMAADSYeAEAAAwxNAz__w",
       "name": "김영철이사 전등"
     }
@@ -91,6 +96,7 @@
       },
       "lHeart": 1736922182,
       "devtype": "SL_SW_ND1",
+      "me": "3c8f",
       "agt": "BjMAADSYeAEAAAwxNAz__w",
       "name": "김혜진이사 전등"
     }
@@ -107,6 +113,7 @@
       },
       "lHeart": 1736921589,
       "devtype": "SL_SW_ND1",
+      "me": "3c90", 
       "agt": "BjMAADSYeAEAAAwxNAz__w",
       "name": "박인수본부장 전등"
     }
@@ -122,6 +129,7 @@
         }
       },
       "lHeart": 1736930433,
+      "me": "86ca", 
       "agt": "BjMAADSYeAEAAAwlEQz__w",
       "devtype": "SL_SW_ND1",
       "name": "스낵바 전등"
@@ -139,6 +147,7 @@
       },
       "lHeart": 1736929398,
       "devtype": "SL_SW_ND1",
+      "me": "86c5", 
       "agt": "BjMAADSYeAEAAAwlEQz__w",
       "name": "서버실 전등"
     }
