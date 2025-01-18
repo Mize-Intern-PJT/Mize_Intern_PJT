@@ -55,6 +55,13 @@ export default defineConfig({
   server: {
     https: true,
     host: true,
+    proxy: {
+      "/api": {
+        target: "http://192.168.0.21:3002",
+        changeOrigin: true,
+        secure: false,
+      },
+    },
   },
   resolve: {
     alias: [

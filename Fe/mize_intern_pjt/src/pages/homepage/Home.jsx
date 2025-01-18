@@ -2,11 +2,7 @@ import { useState, useEffect } from "react";
 import * as Styled from "./Home_style";
 import Filter from "./Filter/Filter";
 import Devices from "./Devices/Devices";
-import {
-  RoomCategory,
-  SubRoomCategory,
-} from "../../components/Modal/FilterModal_style";
-import { data } from "./data";
+import axios from "axios";
 
 export default function Home() {
   const [loading, setLoading] = useState(true); // 로딩 상태
@@ -39,33 +35,34 @@ export default function Home() {
     ], // 공용 공간
   };
 
-  const api = "/http://localhost:3001/api";
+  const api = "http://localhost:3002/api";
+  const apimobile = "http://192.168.0.21:3002/api";
+  const apiproxy = "/api";
 
-  // // API 요청
-  // useEffect(() => {
-  //   async function fetchDevices() {
-  //     try {
-  //       const response = await fetch(api);
-  //       const data = await response.json();
+  // API 요청
+  const fetchDevices = async () => {
+    try {
+      const response = await axios.get(apiproxy);
+      const data = response.data;
+      setAllDevices(data);
+      setFilteredDevices(data);
+    } catch (error) {
+      console.error("Error fetching devices:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-  //       // 모든 장치 데이터 설정
-  //       setAllDevices(data);
-  //       setFilteredDevices(data); // 초기 상태에서는 모든 데이터 표시
-  //     } catch (error) {
-  //       console.error("Error fetching devices:", error);
-  //     } finally {
-  //       setLoading(false); // 로딩 완료
-  //     }
-  //   }
-  //   fetchDevices();
-  // }, []);
-
-  // API 연결 전 테스트
   useEffect(() => {
-    setAllDevices(data);
-    setFilteredDevices(data);
-    setLoading(false);
+    fetchDevices();
   }, []);
+
+  // // API 연결 전 테스트
+  // useEffect(() => {
+  //   setAllDevices(data);
+  //   setFilteredDevices(data);
+  //   setLoading(false);
+  // }, []);
 
   // 필터
   const handleFilterChange = (category, room) => {
