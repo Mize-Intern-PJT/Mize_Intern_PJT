@@ -35,8 +35,6 @@ export default function Home() {
     ], // 공용 공간
   };
 
-  const api = "http://localhost:3002/api";
-  const apimobile = "http://192.168.0.21:3002/api";
   const apiproxy = "/api";
 
   // API 요청
