@@ -3,6 +3,9 @@ const axios = require("axios");
 const CryptoJS = require("crypto-js");
 const cors = require("cors");
 const app = express();
+const https = require("https");
+const fs = require("fs");
+const path = require("path");
 
 app.use(cors());
 app.use(express.json());
@@ -10,7 +13,7 @@ app.use(express.json());
 app.post("/control", async (req, res) => {
   const { agt, me, idx, type, val } = req.body;
 
-  // 필수 값 검증
+  // 검증
   if (!agt || !me || !idx || !type || val === undefined) {
     console.error("Invalid request body:", req.body);
     return res.status(400).send("Invalid request body");
@@ -92,7 +95,24 @@ app.post("/control", async (req, res) => {
   }
 });
 
+// const PORT = process.env.PORT || 3008;
+// app.listen(PORT, "0,0,0,0", () => {
+//   console.log(`API endpoint available at http://0.0.0.0:${PORT}/control`);
+// });
+
+// mkcert로 생성한 인증서 경로
+const httpsOptions = {
+  key: fs.readFileSync(
+    path.join(__dirname, "../../../../../../localhost+3-key.pem") // 정확한 경로로 수정
+  ),
+  cert: fs.readFileSync(
+    path.join(__dirname, "../../../../../../localhost+3.pem") // 정확한 경로로 수정
+  ),
+};
+
 const PORT = process.env.PORT || 3008;
-app.listen(PORT, () => {
-  console.log(`API endpoint available at http://localhost:${PORT}/control`);
+https.createServer(httpsOptions, app).listen(PORT, "0.0.0.0", () => {
+  console.log(
+    `HTTPS API endpoint available at https://192.168.0.xx:${PORT}/control`
+  );
 });
