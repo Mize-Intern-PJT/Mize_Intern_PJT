@@ -1,10 +1,13 @@
-const express = require('express');
-const axios = require('axios');
-const CryptoJS = require('crypto-js');
+const express = require("express");
+const axios = require("axios");
+const CryptoJS = require("crypto-js");
+const cors = require("cors");
 const app = express();
+
+app.use(cors());
 app.use(express.json());
 
-app.post('/control', async (req, res) => {
+app.post("/control", async (req, res) => {
   const { agent, me, idx, type, value } = req.body;
 
   function getTime() {
@@ -12,7 +15,16 @@ app.post('/control', async (req, res) => {
     return tmp.substr(0, 10);
   }
 
-  function getSign(method, params, time, appkey, apptoken, userid, usertoken, did) {
+  function getSign(
+    method,
+    params,
+    time,
+    appkey,
+    apptoken,
+    userid,
+    usertoken,
+    did
+  ) {
     const paramKeyArr = [];
     if (params) {
       for (const key in params) {
@@ -46,34 +58,45 @@ app.post('/control', async (req, res) => {
   try {
     const timestamp = getTime();
 
-    const response = await axios.post('https://api.us.ilifesmart.com/app/api.EpSet', {
-      id: "101",
-      method: "EpSet",
-      system: {
-        ver: "1.0",
-        lang: "en",
-        sign: getSign("EpSet", { agt: agent, me: me, idx: idx, type: type, val: value }, timestamp, "CWNu6tF1jpZ1eD9s36IA6A", "wOxwHxsdwHODCoDVFxPZog", "8390501", "dB3Goflx4IpifWSXhKsmEA"),
-        userid: "8390501",
-        appkey: "CWNu6tF1jpZ1eD9s36IA6A",
-        time: timestamp // UNIX 타임스탬프 사용
-      },
-      params: {
-        agt: agent,
-        me: me,
-        idx: idx,
-        type: type,
-        val: value
+    const response = await axios.post(
+      "https://api.us.ilifesmart.com/app/api.EpSet",
+      {
+        id: "101",
+        method: "EpSet",
+        system: {
+          ver: "1.0",
+          lang: "en",
+          sign: getSign(
+            "EpSet",
+            { agt: agent, me: me, idx: idx, type: type, val: value },
+            timestamp,
+            "CWNu6tF1jpZ1eD9s36IA6A",
+            "wOxwHxsdwHODCoDVFxPZog",
+            "8390501",
+            "dB3Goflx4IpifWSXhKsmEA"
+          ),
+          userid: "8390501",
+          appkey: "CWNu6tF1jpZ1eD9s36IA6A",
+          time: timestamp, // UNIX 타임스탬프 사용
+        },
+        params: {
+          agt: agent,
+          me: me,
+          idx: idx,
+          type: type,
+          val: value,
+        },
       }
-    });
+    );
 
     res.status(200).send(response.data);
   } catch (error) {
-    console.error('Error controlling device:', error);
-    res.status(500).send('Error controlling device');
+    console.error("Error controlling device:", error);
+    res.status(500).send("Error controlling device");
   }
 });
 
 const PORT = process.env.PORT || 3008;
 app.listen(PORT, () => {
- console.log(`API endpoint available at http://localhost:${PORT}/control`);
+  console.log(`API endpoint available at http://localhost:${PORT}/control`);
 });
