@@ -8,7 +8,13 @@ app.use(cors());
 app.use(express.json());
 
 app.post("/control", async (req, res) => {
-  const { agent, me, idx, type, value } = req.body;
+  const { agt, me, idx, type, val } = req.body;
+
+  // 필수 값 검증
+  if (!agt || !me || !idx || !type || val === undefined) {
+    console.error("Invalid request body:", req.body);
+    return res.status(400).send("Invalid request body");
+  }
 
   function getTime() {
     return Math.floor(Date.now() / 1000).toString(); // UNIX 타임스탬프 (초 단위)
@@ -35,9 +41,9 @@ app.post("/control", async (req, res) => {
         }
       }
     }
-    if (did) {
-      signStr += `,did:${did}`;
-    }
+    // if (did) {
+    //   signStr += `,did:${did}`;
+    // }
     signStr += `,time:${time}`;
     signStr += `,userid:${userid || "10001"}`;
     signStr += `,usertoken:${usertoken || "10001"}`;
@@ -58,7 +64,7 @@ app.post("/control", async (req, res) => {
           lang: "en",
           sign: getSign(
             "EpSet",
-            { agt: agent, me: me, idx: idx, type: type, val: value },
+            { agt: agt, me: me, idx: idx, type: type, val: val },
             timestamp,
             "CWNu6tF1jpZ1eD9s36IA6A",
             "wOxwHxsdwHODCoDVFxPZog",
@@ -70,11 +76,11 @@ app.post("/control", async (req, res) => {
           time: timestamp, // UNIX 타임스탬프 사용
         },
         params: {
-          agt: agent,
+          agt: agt,
           me: me,
           idx: idx,
           type: type,
-          val: value,
+          val: val,
         },
       }
     );
