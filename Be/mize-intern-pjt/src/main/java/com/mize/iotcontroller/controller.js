@@ -32,7 +32,7 @@ app.post('/controller', async (req, res) => {
       },
       params: {
           agt: "BjMAADSYeAEAAAteSQz__w",
-          me: "61a9",
+          me: req.body.me,
           idx: "P1",
           type: req.body.type,
           val: req.body.val
