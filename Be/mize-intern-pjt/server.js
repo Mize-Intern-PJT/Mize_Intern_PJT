@@ -1,11 +1,19 @@
 const express = require("express");
+const https = require("https");
 const fs = require("fs");
 const path = require("path");
 const app = express();
 const port = 3002;
 const cors = require("cors");
 
-app.use(cors());
+const key = fs.readFileSync(path.join(__dirname, "localhost+3-key.pem"));
+const cert = fs.readFileSync(path.join(__dirname, "localhost+3.pem"));
+
+app.use(
+  cors({
+    origin: "*", // 모든 도메인 허용
+  })
+);
 
 const getData = () => {
   const files = [
@@ -37,6 +45,11 @@ app.get("/api", (req, res) => {
   res.json(data);
 });
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+// app.listen(port, "0.0.0.0", () => {
+//   console.log(`Server is running at http://0.0.0.0:${port}`);
+// });
+
+// HTTPS 서버 생성
+https.createServer({ key, cert }, app).listen(port, "0.0.0.0", () => {
+  console.log(`HTTPS Server is running at https://0.0.0.0:${port}`);
 });
