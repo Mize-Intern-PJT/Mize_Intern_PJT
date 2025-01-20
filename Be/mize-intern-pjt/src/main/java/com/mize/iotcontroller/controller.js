@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const axios = require('axios');
 const crypto = require('crypto'); // 암호화 라이브러리 추가
 const app = express();
-const port = 3000;
+const port = 3005;
 
 app.use(bodyParser.json());
 
