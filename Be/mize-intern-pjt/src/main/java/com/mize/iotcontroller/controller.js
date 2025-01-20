@@ -11,20 +11,10 @@ app.post("/control", async (req, res) => {
   const { agent, me, idx, type, value } = req.body;
 
   function getTime() {
-    const tmp = Date.parse(new Date()).toString();
-    return tmp.substr(0, 10);
+    return Math.floor(Date.now() / 1000).toString(); // UNIX 타임스탬프 (초 단위)
   }
 
-  function getSign(
-    method,
-    params,
-    time,
-    appkey,
-    apptoken,
-    userid,
-    usertoken,
-    did
-  ) {
+  function getSign(method, params, time, appkey, apptoken, userid, usertoken) {
     const paramKeyArr = [];
     if (params) {
       for (const key in params) {
