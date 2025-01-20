@@ -31,7 +31,7 @@ app.post('/controller', async (req, res) => {
           time: new Date().toISOString()
       },
       params: {
-          agt: "BjMAADSYeAEAAAteSQz__w",
+          agt: req.body.agt,
           me: req.body.me,
           idx: "P1",
           type: req.body.type,
