@@ -27,7 +27,7 @@ app.post("/spotcontrol", async (req, res) => {
     const paramKeyArr = [];
     if (params) {
       for (const key in params) {
-        paramKeyArr.push(key);
+        paramKeyArr.push(JSON.stringify(key));
       }
       paramKeyArr.sort();
     }
