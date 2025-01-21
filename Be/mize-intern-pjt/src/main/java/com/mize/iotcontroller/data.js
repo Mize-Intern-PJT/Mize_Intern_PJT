@@ -7,11 +7,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post("/data", async (req, res) => {
+app.get("/data", async (req, res) => {
   const { agt, me} = req.body;
 
   // 필수 값 검증
-  if (!agt || !me === undefined) {
+  if (!agt || me === undefined) {
     console.error("Invalid request body:", req.body);
     return res.status(400).send("Invalid request body");
   }
