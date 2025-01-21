@@ -6,12 +6,16 @@ const app = express();
 const https = require("https");
 const fs = require("fs");
 const path = require("path");
+const { json } = require("body-parser");
 
 app.use(cors());
 app.use(express.json());
 
 app.post("/spotcontrol", async (req, res) => {
   const { agt, me, ai, category, brand, keys } = req.body;
+  console.log("req:", req.body);
+  //const keysvalue = JSON.stringify([keys]);
+  //console.log("keysvalue:", keysvalue);
 
   // 검증
   if (!agt || !me || !ai || !category || !brand || keys === undefined) {
@@ -26,8 +30,8 @@ app.post("/spotcontrol", async (req, res) => {
   function getSign(method, params, time, appkey, apptoken, userid, usertoken) {
     const paramKeyArr = [];
     if (params) {
-      for (const key in params) {
-        paramKeyArr.push(JSON.stringify(key));
+      for (const keys in params) {
+        paramKeyArr.push(keys);
       }
       paramKeyArr.sort();
     }
@@ -35,7 +39,9 @@ app.post("/spotcontrol", async (req, res) => {
     if (paramKeyArr.length > 0) {
       for (let i = 0; i < paramKeyArr.length; i++) {
         const k = paramKeyArr[i];
+        console.log("params:", k, i, params[k]);
         const v = params[k];
+        console.log("v: ", v);
         if (typeof v !== "object") {
           const vStr = v.toString();
           if (vStr.charAt(0) !== "@") {
@@ -56,7 +62,13 @@ app.post("/spotcontrol", async (req, res) => {
 
   try {
     const timestamp = getTime();
-    const keysvalue = `[\\\"${keys}\\\"]`;
+    //const keysvalue = `[\\ \"${keys}\\ \"]`;
+    // const keysvalue = [keys];
+    //const sanitizedKey = keys.replace(/^"(.*)"$/, "$1"); // 양쪽 따옴표 제거
+    // console.log("Sanitized key:", sanitizedKey);
+
+    // JSON 배열로 변환
+    //console.log("Converted keysvalue:", keysvalue);
 
     const response = await axios.post(
       "https://api.us.ilifesmart.com/app/irapi.SendKeys",
@@ -74,7 +86,7 @@ app.post("/spotcontrol", async (req, res) => {
               ai: ai,
               category: category,
               brand: brand,
-              keys: JSON.stringify(keys),
+              keys: keys,
             },
             timestamp,
             "CWNu6tF1jpZ1eD9s36IA6A",
@@ -92,7 +104,7 @@ app.post("/spotcontrol", async (req, res) => {
           ai: ai,
           category: category,
           brand: brand,
-          keys: keysvalue
+          keys: keys,
         },
       }
     );
