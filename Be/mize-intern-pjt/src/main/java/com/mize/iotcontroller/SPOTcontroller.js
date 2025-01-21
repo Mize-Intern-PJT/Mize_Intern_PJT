@@ -56,6 +56,7 @@ app.post("/spotcontrol", async (req, res) => {
 
   try {
     const timestamp = getTime();
+    const keysvalue = '["${keys}"]';
 
     const response = await axios.post(
       "https://api.us.ilifesmart.com/app/irapi.SendKeys",
@@ -67,7 +68,14 @@ app.post("/spotcontrol", async (req, res) => {
           lang: "en",
           sign: getSign(
             "SendKeys",
-            { agt: agt, me: me, ai: ai, category: category, brand: brand, keys: keys },
+            {
+              agt: agt,
+              me: me,
+              ai: ai,
+              category: category,
+              brand: brand,
+              keys: JSON.stringify(keys),
+            },
             timestamp,
             "CWNu6tF1jpZ1eD9s36IA6A",
             "wOxwHxsdwHODCoDVFxPZog",
@@ -84,7 +92,7 @@ app.post("/spotcontrol", async (req, res) => {
           ai: ai,
           category: category,
           brand: brand,
-          keys: JSON.stringify(keys)
+          keys: keysvalue,
         },
       }
     );
