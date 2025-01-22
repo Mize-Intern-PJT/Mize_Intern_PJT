@@ -11,12 +11,6 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/data", async (req, res) => {
-  // 필수 값 검증
-  // if (!agt || me === undefined) {
-  //   console.error("Invalid request body:", req.body);
-  //   return res.status(400).send("Invalid request body");
-  // }
-
   function getTime() {
     return Math.floor(Date.now() / 1000).toString(); // UNIX 타임스탬프 (초 단위)
   }
