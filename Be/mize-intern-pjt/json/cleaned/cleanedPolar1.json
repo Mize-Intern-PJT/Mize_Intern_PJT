@@ -1,0 +1,155 @@
+[
+  {
+    "message": {
+      "data": {
+        "P1": {
+          "val": 1,
+          "type": 129,
+          "v": 1,
+          "valts": 1736926794016
+        }
+      },
+      "lHeart": 1736929116,
+      "devtype": "SL_SW_ND1",
+      "me": "61a9", 
+      "agt": "BjMAADSYeAEAAAteSQz__w",
+      "name": "대회의실 전등"
+    }
+  },
+  {
+    "message": {
+      "data": {
+        "P1": {
+          "val": 0,
+          "type": 128,
+          "v": 0,
+          "valts": 1736918210767
+        }
+      },
+      "lHeart": 1736928685,
+      "agt": "BjMAADSYeAEAAAteSQz__w",
+      "devtype": "SL_SW_ND1",
+      "me": "61ab", 
+      "name": "1번 소회의실 전등"
+    }
+  },
+  {
+    "message": {
+      "data": {
+        "P1": {
+          "val": 0,
+          "type": 128,
+          "v": 0,
+          "valts": 1736919867644
+        }
+      },
+      "lHeart": 1736929079,
+      "me": "61aa", 
+      "devtype": "SL_SW_ND1",
+      "agt": "BjMAADSYeAEAAAteSQz__w",
+      "name": "2번 소회의실 전등"
+    }
+  },
+  {
+    "message": {
+      "data": {
+        "P1": {
+          "val": 0,
+          "type": 128,
+          "v": 0,
+          "valts": 1736867213854
+        }
+      },
+      "lHeart": 1736917521,
+      "devtype": "SL_SW_ND1",
+      "me": "3c8d", 
+      "agt": "BjMAADSYeAEAAAwxNAz__w",
+      "name": "김영훈대표 전등"
+    }
+  },
+  {
+    "message": {
+      "data": {
+        "P1": {
+          "val": 0,
+          "type": 128,
+          "v": 0,
+          "valts": 1736867219480
+        }
+      },
+      "lHeart": 1736921161,
+      "devtype": "SL_SW_ND1",
+      "me": "3c8e", 
+      "agt": "BjMAADSYeAEAAAwxNAz__w",
+      "name": "김영철이사 전등"
+    }
+  },
+  {
+    "message": {
+      "data": {
+        "P1": {
+          "val": 1,
+          "type": 129,
+          "v": 1,
+          "valts": 1736899630758
+        }
+      },
+      "lHeart": 1736922182,
+      "devtype": "SL_SW_ND1",
+      "me": "3c8f",
+      "agt": "BjMAADSYeAEAAAwxNAz__w",
+      "name": "김혜진이사 전등"
+    }
+  },
+  {
+    "message": {
+      "data": {
+        "P1": {
+          "val": 1,
+          "type": 129,
+          "v": 1,
+          "valts": 1736894138234
+        }
+      },
+      "lHeart": 1736921589,
+      "devtype": "SL_SW_ND1",
+      "me": "3c90", 
+      "agt": "BjMAADSYeAEAAAwxNAz__w",
+      "name": "박인수본부장 전등"
+    }
+  },
+  {
+    "message": {
+      "data": {
+        "P1": {
+          "val": 1,
+          "type": 129,
+          "v": 1,
+          "valts": 1736835029097
+        }
+      },
+      "lHeart": 1736930433,
+      "me": "86ca", 
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
+      "devtype": "SL_SW_ND1",
+      "name": "스낵바 전등"
+    }
+  },
+  {
+    "message": {
+      "data": {
+        "P1": {
+          "val": 0,
+          "type": 128,
+          "v": 0,
+          "valts": 1736926709345
+        }
+      },
+      "lHeart": 1736929398,
+      "devtype": "SL_SW_ND1",
+      "me": "86c5", 
+      "agt": "BjMAADSYeAEAAAwlEQz__w",
+      "name": "서버실 전등"
+    }
+  }
+]

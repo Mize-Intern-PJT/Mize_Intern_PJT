@@ -1,0 +1,615 @@
+[
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 78,
+                    "valts": 1736927461098,
+                    "val": 0
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736842522077,
+                    "val": 2
+                }
+            },
+            "me": "86cf",
+            "zg_homeid": 46140,
+            "zg_nodeid": 37810,
+            "lHeart": 1736930105,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "집중실2  재실",
+            "lDbm": -40
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 78,
+                    "valts": 1736928991243,
+                    "val": 0
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736899439088,
+                    "val": 18
+                }
+            },
+            "me": "86cd",
+            "zg_homeid": 46140,
+            "zg_nodeid": 37786,
+            "lHeart": 1736930104,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "집중실1 재실",
+            "lDbm": -45
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.21",
+            "fullCls": "SL_P_IR_V2",
+            "me": "86d4",
+            "data": {
+                "P2": {
+                    "icon": "",
+                    "val": 0,
+                    "type": 0,
+                    "valts": 1735907777609
+                },
+                "P1": {
+                    "icon": "",
+                    "val": 1,
+                    "type": 129,
+                    "valts": 1735907820872
+                }
+            },
+            "lHeart": 1736929889,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "SL_P_IR",
+            "name": "수면/샤워(남) 리모컨 제어",
+            "lDbm": -69
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736930035094,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736910101072,
+                    "val": 0
+                }
+            },
+            "me": "86d1",
+            "zg_homeid": 46140,
+            "zg_nodeid": 20265,
+            "lHeart": 1736930105,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "수면/샤워(남) 재실",
+            "lDbm": -49
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.20",
+            "fullCls": "SL_SC_BE_V1",
+            "me": "86d8",
+            "data": {
+                "T": {
+                    "type": 95,
+                    "v": 25.6,
+                    "valts": 1736930125224,
+                    "val": 256
+                },
+                "H": {
+                    "type": 95,
+                    "v": 23.5,
+                    "valts": 1736929624218,
+                    "val": 235
+                },
+                "Z": {
+                    "type": 95,
+                    "v": 5,
+                    "valts": 1736910141332,
+                    "val": 5
+                },
+                "V": {
+                    "type": 79,
+                    "v": 100,
+                    "valts": 1736930125224,
+                    "val": 150
+                }
+            },
+            "lHeart": 1736930125,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "SL_SC_BE",
+            "name": "수면/샤워(남) 환경 센서",
+            "lDbm": -70
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.21",
+            "fullCls": "SL_SW_ND2_V2",
+            "me": "86d0",
+            "data": {
+                "P2": {
+                    "val": 0,
+                    "type": 128,
+                    "v": 0,
+                    "valts": 1736899293498
+                },
+                "P1": {
+                    "val": 0,
+                    "type": 128,
+                    "v": 0,
+                    "valts": 1736899293872
+                },
+                "P3": {
+                    "type": 11,
+                    "v": 100,
+                    "valts": 1736927829427,
+                    "val": 303
+                }
+            },
+            "lHeart": 1736929332,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "SL_SW_ND2",
+            "name": "수면/샤워(남) 전등",
+            "lDbm": -62
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.14.13",
+            "fullCls": "SL_OE_DE_V1",
+            "me": "86d3",
+            "data": {
+                "P2": {
+                    "type": 3,
+                    "v": 1.4782586097717,
+                    "valts": 1736930164819,
+                    "val": 1069365140
+                },
+                "P1": {
+                    "type": 129,
+                    "v": 1,
+                    "valts": 1735907713846,
+                    "val": 1
+                },
+                "P4": {
+                    "type": 222,
+                    "v": 0,
+                    "valts": 1735907690548,
+                    "val": 0
+                },
+                "P3": {
+                    "type": 3,
+                    "v": 6.6090631484985,
+                    "valts": 1736753379659,
+                    "val": 1087602034
+                }
+            },
+            "lHeart": 1736930164,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "SL_OE_DE",
+            "name": "수면/샤워(남) 플러그",
+            "lDbm": -75
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.21",
+            "fullCls": "SL_P_IR_V2",
+            "me": "86d7",
+            "data": {
+                "P2": {
+                    "icon": "",
+                    "val": 0,
+                    "type": 0,
+                    "valts": 1735908276223
+                },
+                "P1": {
+                    "icon": "",
+                    "val": 1,
+                    "type": 129,
+                    "valts": 1735908302142
+                }
+            },
+            "lHeart": 1736930181,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "SL_P_IR",
+            "name": "수면/샤워(여) 리모컨 제어",
+            "lDbm": -87
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.21",
+            "fullCls": "SL_SW_ND2_V2",
+            "me": "86d5",
+            "data": {
+                "P2": {
+                    "val": 0,
+                    "type": 128,
+                    "v": 0,
+                    "valts": 1736902757006
+                },
+                "P1": {
+                    "val": 0,
+                    "type": 128,
+                    "v": 0,
+                    "valts": 1736902955884
+                },
+                "P3": {
+                    "type": 11,
+                    "v": 100,
+                    "valts": 1736928853081,
+                    "val": 302
+                }
+            },
+            "lHeart": 1736928853,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "SL_SW_ND2",
+            "name": "수면/샤워(여) 전등",
+            "lDbm": -59
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.14.13",
+            "fullCls": "SL_OE_DE_V1",
+            "me": "86d6",
+            "data": {
+                "P2": {
+                    "type": 3,
+                    "v": 1.7198667526245,
+                    "valts": 1736930277004,
+                    "val": 1071391896
+                },
+                "P1": {
+                    "type": 129,
+                    "v": 1,
+                    "valts": 1736128163490,
+                    "val": 1
+                },
+                "P4": {
+                    "type": 222,
+                    "v": 0,
+                    "valts": 1735908139901,
+                    "val": 0
+                },
+                "P3": {
+                    "type": 3,
+                    "v": 4.8303651809692,
+                    "valts": 1736235796478,
+                    "val": 1083871834
+                }
+            },
+            "lHeart": 1736930277,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "SL_OE_DE",
+            "name": "수면/샤워(여) 플러그",
+            "lDbm": -66
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736929496193,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736899339243,
+                    "val": 24
+                }
+            },
+            "me": "86d2",
+            "zg_homeid": 46140,
+            "zg_nodeid": 41294,
+            "lHeart": 1736930224,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "수면/샤워(여) 재실",
+            "lDbm": -54
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.20",
+            "fullCls": "SL_SC_BE_V1",
+            "me": "86d9",
+            "data": {
+                "T": {
+                    "type": 95,
+                    "v": 24.9,
+                    "valts": 1736929019533,
+                    "val": 249
+                },
+                "V": {
+                    "type": 79,
+                    "v": 100,
+                    "valts": 1736916991251,
+                    "val": 150
+                },
+                "Z": {
+                    "type": 95,
+                    "v": 150,
+                    "valts": 1736929520744,
+                    "val": 150
+                },
+                "H": {
+                    "type": 95,
+                    "v": 25.1,
+                    "valts": 1736928518266,
+                    "val": 251
+                }
+            },
+            "lHeart": 1736930021,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "SL_SC_BE",
+            "name": "수면/샤워(여) 환경 센서",
+            "lDbm": -76
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736131184457,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736926711997,
+                    "val": 1
+                }
+            },
+            "me": "86c6",
+            "zg_homeid": 46140,
+            "zg_nodeid": 129,
+            "lHeart": 1736930347,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "서버실 재실",
+            "lDbm": -41
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.14.13",
+            "fullCls": "SL_OE_DE_V1",
+            "me": "86c8",
+            "data": {
+                "P2": {
+                    "type": 3,
+                    "v": 84.309906005859,
+                    "valts": 1736930110664,
+                    "val": 1118346924
+                },
+                "P1": {
+                    "type": 129,
+                    "v": 1,
+                    "valts": 1735904100409,
+                    "val": 1
+                },
+                "P4": {
+                    "type": 222,
+                    "v": 0,
+                    "valts": 1735904048136,
+                    "val": 0
+                },
+                "P3": {
+                    "type": 3,
+                    "v": 66.280311584473,
+                    "valts": 1736930323667,
+                    "val": 1115983749
+                }
+            },
+            "lHeart": 1736930323,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "SL_OE_DE",
+            "name": "서버실 플러그",
+            "lDbm": -58
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.21",
+            "fullCls": "SL_SW_ND1_V2",
+            "me": "86c5",
+            "data": {
+                "P2": {
+                    "type": 11,
+                    "v": 100,
+                    "valts": 1736906979907,
+                    "val": 303
+                },
+                "P1": {
+                    "val": 0,
+                    "type": 128,
+                    "v": 0,
+                    "valts": 1736926709345
+                }
+            },
+            "lHeart": 1736929398,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "SL_SW_ND1",
+            "name": "서버실 전등",
+            "lDbm": -57
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.21",
+            "fullCls": "SL_P_IR_V2",
+            "me": "86c9",
+            "data": {
+                "P2": {
+                    "icon": "",
+                    "val": 0,
+                    "type": 0,
+                    "valts": 1735904206274
+                },
+                "P1": {
+                    "icon": "",
+                    "val": 1,
+                    "type": 129,
+                    "valts": 1735904283546
+                }
+            },
+            "lHeart": 1736930110,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "SL_P_IR",
+            "name": "서버실 리모컨 제어",
+            "lDbm": -59
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 78,
+                    "valts": 1736929909047,
+                    "val": 0
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736928811344,
+                    "val": 176
+                }
+            },
+            "me": "86cb",
+            "zg_homeid": 46140,
+            "zg_nodeid": 46238,
+            "lHeart": 1736930469,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "ZG#TS06012",
+            "name": "스낵바 재실",
+            "lDbm": -43
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.21",
+            "fullCls": "SL_SW_ND1_V2",
+            "me": "86ca",
+            "data": {
+                "P2": {
+                    "type": 11,
+                    "v": 100,
+                    "valts": 1736921455289,
+                    "val": 305
+                },
+                "P1": {
+                    "val": 1,
+                    "type": 129,
+                    "v": 1,
+                    "valts": 1736835029097
+                }
+            },
+            "lHeart": 1736930433,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwlEQz__w",
+            "devtype": "SL_SW_ND1",
+            "name": "스낵바 전등",
+            "lDbm": -53
+        },
+        "code": 0,
+        "id": "101"
+    }
+
+]

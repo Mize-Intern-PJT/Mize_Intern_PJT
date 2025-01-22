@@ -1,0 +1,441 @@
+[
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.21",
+            "fullCls": "SL_P_IR_V2",
+            "me": "3c98",
+            "data": {
+                "P2": {
+                    "icon": "",
+                    "val": 0,
+                    "type": 0,
+                    "valts": 1735904652336
+                },
+                "P1": {
+                    "icon": "",
+                    "val": 1,
+                    "type": 129,
+                    "valts": 1735904848806
+                }
+            },
+            "lHeart": 1736930633,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "SL_P_IR",
+            "name": "김혜진이사 리모컨 제어",
+            "lDbm": -54
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.14.13",
+            "fullCls": "SL_OE_DE_V1",
+            "me": "3c97",
+            "data": {
+                "P2": {
+                    "type": 3,
+                    "v": 1.6940029859543,
+                    "valts": 1736930797271,
+                    "val": 1071174935
+                },
+                "P1": {
+                    "type": 129,
+                    "v": 1,
+                    "valts": 1735904545234,
+                    "val": 1
+                },
+                "P4": {
+                    "type": 222,
+                    "v": 0,
+                    "valts": 1735904515025,
+                    "val": 0
+                },
+                "P3": {
+                    "type": 3,
+                    "v": 6.0719742774963,
+                    "valts": 1735904943328,
+                    "val": 1086475677
+                }
+            },
+            "lHeart": 1736930797,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "SL_OE_DE",
+            "name": "김혜진이사 플러그",
+            "lDbm": -59
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.20",
+            "fullCls": "SL_SC_BE_V1",
+            "me": "3c95",
+            "data": {
+                "T": {
+                    "type": 95,
+                    "v": 27.7,
+                    "valts": 1736918202579,
+                    "val": 277
+                },
+                "V": {
+                    "type": 79,
+                    "v": 100,
+                    "valts": 1736903477328,
+                    "val": 151
+                },
+                "Z": {
+                    "type": 95,
+                    "v": 669,
+                    "valts": 1736917953056,
+                    "val": 669
+                },
+                "H": {
+                    "type": 95,
+                    "v": 15.8,
+                    "valts": 1736917953056,
+                    "val": 158
+                }
+            },
+            "lHeart": 1736918202,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "SL_SC_BE",
+            "name": "김영훈대표 환경센서",
+            "lDbm": -81
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736916718357,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736917809438,
+                    "val": 369
+                }
+            },
+            "me": "3c91",
+            "zg_homeid": 5315,
+            "zg_nodeid": 22743,
+            "lHeart": 1736917930,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "ZG#TS06012",
+            "name": "김영훈대표 재실",
+            "lDbm": -44
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.21",
+            "fullCls": "SL_SW_ND1_V2",
+            "me": "3c8d",
+            "data": {
+                "P2": {
+                    "type": 11,
+                    "v": 100,
+                    "valts": 1736895021531,
+                    "val": 304
+                },
+                "P1": {
+                    "val": 0,
+                    "type": 128,
+                    "v": 0,
+                    "valts": 1736867213854
+                }
+            },
+            "lHeart": 1736917521,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "SL_SW_ND1",
+            "name": "김영훈대표 전등",
+            "lDbm": -68
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.20",
+            "fullCls": "SL_SC_BE_V1",
+            "me": "3c99",
+            "data": {
+                "T": {
+                    "type": 95,
+                    "v": 26.4,
+                    "valts": 1736921126994,
+                    "val": 264
+                },
+                "V": {
+                    "type": 79,
+                    "v": 100,
+                    "valts": 1736922127608,
+                    "val": 152
+                },
+                "Z": {
+                    "type": 95,
+                    "v": 343,
+                    "valts": 1736922127608,
+                    "val": 343
+                },
+                "H": {
+                    "type": 95,
+                    "v": 20.1,
+                    "valts": 1736922127608,
+                    "val": 201
+                }
+            },
+            "lHeart": 1736922127,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "SL_SC_BE",
+            "name": "김영철이사 환경센서 ",
+            "lDbm": -72
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736909703711,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736922099322,
+                    "val": 84
+                }
+            },
+            "me": "3c92",
+            "zg_homeid": 5315,
+            "zg_nodeid": 50738,
+            "lHeart": 1736922099,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "ZG#TS06012",
+            "name": "김영철이사 재실",
+            "lDbm": -48
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.21",
+            "fullCls": "SL_SW_ND1_V2",
+            "me": "3c8e",
+            "data": {
+                "P2": {
+                    "type": 11,
+                    "v": 100,
+                    "valts": 1736910673389,
+                    "val": 305
+                },
+                "P1": {
+                    "val": 0,
+                    "type": 128,
+                    "v": 0,
+                    "valts": 1736867219480
+                }
+            },
+            "lHeart": 1736921161,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "SL_SW_ND1",
+            "name": "김영철이사 전등",
+            "lDbm": -56
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.20",
+            "fullCls": "SL_SC_BE_V1",
+            "me": "3c96",
+            "data": {
+                "T": {
+                    "type": 95,
+                    "v": 26.2,
+                    "valts": 1736922066750,
+                    "val": 262
+                },
+                "V": {
+                    "type": 79,
+                    "v": 100,
+                    "valts": 1736909002112,
+                    "val": 152
+                },
+                "Z": {
+                    "type": 95,
+                    "v": 126,
+                    "valts": 1736922066750,
+                    "val": 126
+                },
+                "H": {
+                    "type": 95,
+                    "v": 22.8,
+                    "valts": 1736922066750,
+                    "val": 228
+                }
+            },
+            "lHeart": 1736922066,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "SL_SC_BE",
+            "name": "김혜진이사 환경센서",
+            "lDbm": -72
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736919496949,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736916258832,
+                    "val": 56
+                }
+            },
+            "me": "3c93",
+            "zg_homeid": 5315,
+            "zg_nodeid": 28546,
+            "lHeart": 1736922184,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "ZG#TS06012",
+            "name": "김혜진이사 재실",
+            "lDbm": -39
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.21",
+            "fullCls": "SL_SW_ND1_V2",
+            "me": "3c8f",
+            "data": {
+                "P2": {
+                    "type": 11,
+                    "v": 100,
+                    "valts": 1736922182933,
+                    "val": 302
+                },
+                "P1": {
+                    "val": 1,
+                    "type": 129,
+                    "v": 1,
+                    "valts": 1736899630758
+                }
+            },
+            "lHeart": 1736922182,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "SL_SW_ND1",
+            "name": "김혜진이사 전등",
+            "lDbm": -54
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.0.0.0",
+            "fullCls": "ZG#TS06012",
+            "data": {
+                "M1": {
+                    "type": 79,
+                    "valts": 1736919503298,
+                    "val": 1
+                },
+                "Z1": {
+                    "type": 95,
+                    "valts": 1736919842032,
+                    "val": 95
+                }
+            },
+            "me": "3c94",
+            "zg_homeid": 5315,
+            "zg_nodeid": 43741,
+            "lHeart": 1736922314,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "ZG#TS06012",
+            "name": "박인수본부장 재실",
+            "lDbm": -33
+        },
+        "code": 0,
+        "id": "101"
+    },
+    {
+        "status": "ok",
+        "message": {
+            "ver": "0.1.6.21",
+            "fullCls": "SL_SW_ND1_V2",
+            "me": "3c90",
+            "data": {
+                "P2": {
+                    "type": 11,
+                    "v": 100,
+                    "valts": 1736914100106,
+                    "val": 306
+                },
+                "P1": {
+                    "val": 1,
+                    "type": 129,
+                    "v": 1,
+                    "valts": 1736894138234
+                }
+            },
+            "lHeart": 1736921589,
+            "stat": 1,
+            "agt": "BjMAADSYeAEAAAwxNAz__w",
+            "devtype": "SL_SW_ND1",
+            "name": "박인수본부장 전등",
+            "lDbm": -73
+        },
+        "code": 0,
+        "id": "101"
+    }
+
+]

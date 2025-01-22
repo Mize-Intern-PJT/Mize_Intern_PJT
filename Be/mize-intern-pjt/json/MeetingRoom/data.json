@@ -1,0 +1,297 @@
+[
+{
+    "status": "ok",
+    "message": {
+        "ver": "0.1.6.21",
+        "fullCls": "SL_SW_ND1_V2",
+        "me": "61a9",
+        "data": {
+            "P2": {
+                "type": 11,
+                "v": 100,
+                "valts": 1736929116213,
+                "val": 306
+            },
+            "P1": {
+                "val": 1,
+                "type": 129,
+                "v": 1,
+                "valts": 1736926794016
+            }
+        },
+        "lHeart": 1736929116,
+        "stat": 1,
+        "agt": "BjMAADSYeAEAAAteSQz__w",
+        "devtype": "SL_SW_ND1",
+        "name": "대회의실 전등",
+        "lDbm": -52
+    },
+    "code": 0,
+    "id": "101"
+},
+
+{
+    "status": "ok",
+    "message": {
+        "ver": "0.1.6.21",
+        "fullCls": "SL_SW_ND1_V2",
+        "me": "61ab",
+        "data": {
+            "P2": {
+                "type": 11,
+                "v": 100,
+                "valts": 1736925687882,
+                "val": 302
+            },
+            "P1": {
+                "val": 0,
+                "type": 128,
+                "v": 0,
+                "valts": 1736918210767
+            }
+        },
+        "lHeart": 1736928685,
+        "stat": 1,
+        "agt": "BjMAADSYeAEAAAteSQz__w",
+        "devtype": "SL_SW_ND1",
+        "name": "1번 소회의실 전등",
+        "lDbm": -71
+    },
+    "code": 0,
+    "id": "101"
+},
+{
+    "status": "ok",
+    "message": {
+        "ver": "0.1.6.21",
+        "fullCls": "SL_SW_ND1_V2",
+        "me": "61aa",
+        "data": {
+            "P2": {
+                "type": 11,
+                "v": 100,
+                "valts": 1736929079560,
+                "val": 301
+            },
+            "P1": {
+                "val": 0,
+                "type": 128,
+                "v": 0,
+                "valts": 1736919867644
+            }
+        },
+        "lHeart": 1736929079,
+        "stat": 1,
+        "agt": "BjMAADSYeAEAAAteSQz__w",
+        "devtype": "SL_SW_ND1",
+        "name": "2번 소회의실 전등",
+        "lDbm": -63
+    },
+    "code": 0,
+    "id": "101"
+},
+{
+    "status": "ok",
+    "message": {
+        "ver": "0.0.0.0",
+        "fullCls": "ZG#TS06012",
+        "data": {
+            "M1": {
+                "type": 79,
+                "valts": 1736929588802,
+                "val": 1
+            },
+            "Z1": {
+                "type": 95,
+                "valts": 1736928935907,
+                "val": 34
+            }
+        },
+        "me": "61b3",
+        "zg_homeid": 35790,
+        "zg_nodeid": 57436,
+        "lHeart": 1736929599,
+        "stat": 1,
+        "agt": "BjMAADSYeAEAAAteSQz__w",
+        "devtype": "ZG#TS06012",
+        "name": "2번 소회의실 재실",
+        "lDbm": -51
+    },
+    "code": 0,
+    "id": "101"
+},
+{
+    "status": "ok",
+    "message": {
+        "ver": "0.0.0.0",
+        "fullCls": "ZG#TS06012",
+        "data": {
+            "M1": {
+                "type": 79,
+                "valts": 1736926852625,
+                "val": 1
+            },
+            "Z1": {
+                "type": 95,
+                "valts": 1736928982802,
+                "val": 30
+            }
+        },
+        "me": "61b4",
+        "zg_homeid": 35790,
+        "zg_nodeid": 45415,
+        "lHeart": 1736929599,
+        "stat": 1,
+        "agt": "BjMAADSYeAEAAAteSQz__w",
+        "devtype": "ZG#TS06012",
+        "name": "1번 소회의실 재실",
+        "lDbm": -53
+    },
+    "code": 0,
+    "id": "101"
+},
+{
+    "status": "ok",
+    "message": {
+        "ver": "0.0.0.0",
+        "fullCls": "ZG#TS06012",
+        "data": {
+            "M1": {
+                "type": 78,
+                "valts": 1735899883488,
+                "val": 0
+            },
+            "Z1": {
+                "type": 95,
+                "valts": 1736927832949,
+                "val": 127
+            }
+        },
+        "me": "61b2",
+        "zg_homeid": 35790,
+        "zg_nodeid": 38993,
+        "lHeart": 1736929599,
+        "stat": 1,
+        "agt": "BjMAADSYeAEAAAteSQz__w",
+        "devtype": "ZG#TS06012",
+        "name": "대회의실 재실",
+        "lDbm": -45
+    },
+    "code": 0,
+    "id": "101"
+},
+{
+    "status": "ok",
+    "message": {
+        "ver": "0.1.14.13",
+        "fullCls": "SL_OE_DE_V1",
+        "me": "61b0",
+        "data": {
+            "P2": {
+                "type": 3,
+                "v": 0.32878658175468,
+                "valts": 1736928373675,
+                "val": 1051219639
+            },
+            "P1": {
+                "type": 128,
+                "v": 0,
+                "valts": 1736479843552,
+                "val": 0
+            },
+            "P4": {
+                "type": 222,
+                "v": 0,
+                "valts": 1735628012249,
+                "val": 0
+            },
+            "P3": {
+                "type": 3,
+                "v": 0,
+                "valts": 1735870821682,
+                "val": 0
+            }
+        },
+        "lHeart": 1736929524,
+        "stat": 1,
+        "agt": "BjMAADSYeAEAAAteSQz__w",
+        "devtype": "SL_OE_DE",
+        "name": "대회의실 플러그",
+        "lDbm": -60
+    },
+    "code": 0,
+    "id": "101"
+},
+{
+    "status": "ok",
+    "message": {
+        "ver": "0.1.6.21",
+        "fullCls": "SL_P_IR_V2",
+        "me": "61b1",
+        "data": {
+            "P2": {
+                "icon": "",
+                "val": 0,
+                "type": 0,
+                "valts": 1735628925489
+            },
+            "P1": {
+                "icon": "",
+                "val": 1,
+                "type": 129,
+                "valts": 1735629613635
+            }
+        },
+        "lHeart": 1736929635,
+        "stat": 1,
+        "agt": "BjMAADSYeAEAAAteSQz__w",
+        "devtype": "SL_P_IR",
+        "name": "대회의실 리모컨 제어",
+        "lDbm": -52
+    },
+    "code": 0,
+    "id": "101"
+},
+{
+    "status": "ok",
+    "message": {
+        "ver": "0.1.6.20",
+        "fullCls": "SL_SC_BE_V1",
+        "me": "61ad",
+        "data": {
+            "T": {
+                "type": 95,
+                "v": 26,
+                "valts": 1736929416313,
+                "val": 260
+            },
+            "H": {
+                "type": 95,
+                "v": 23.3,
+                "valts": 1736929416313,
+                "val": 233
+            },
+            "Z": {
+                "type": 95,
+                "v": 172,
+                "valts": 1736929416313,
+                "val": 172
+            },
+            "V": {
+                "type": 79,
+                "v": 100,
+                "valts": 1736879854530,
+                "val": 150
+            }
+        },
+        "lHeart": 1736929416,
+        "stat": 1,
+        "agt": "BjMAADSYeAEAAAteSQz__w",
+        "devtype": "SL_SC_BE",
+        "name": "대회의실 환경센서",
+        "lDbm": -71
+    },
+    "code": 0,
+    "id": "101"
+}
+]

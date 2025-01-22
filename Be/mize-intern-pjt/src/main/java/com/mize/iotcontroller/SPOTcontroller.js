@@ -27,7 +27,11 @@ app.post("/spotcontrol", async (req, res) => {
     const paramKeyArr = [];
     if (params) {
       for (const key in params) {
+<<<<<<< HEAD
         paramKeyArr.push(key);
+=======
+        paramKeyArr.push(JSON.stringify(key));
+>>>>>>> feature-BE/api
       }
       paramKeyArr.sort();
     }
@@ -56,7 +60,11 @@ app.post("/spotcontrol", async (req, res) => {
 
   try {
     const timestamp = getTime();
+<<<<<<< HEAD
     //const keysvalue = `[\\\"${keys}\\\"]`;
+=======
+    const keysvalue = `[\\\"${keys}\\\"]`;
+>>>>>>> feature-BE/api
 
     const response = await axios.post(
       "https://api.us.ilifesmart.com/app/irapi.SendKeys",
@@ -92,7 +100,11 @@ app.post("/spotcontrol", async (req, res) => {
           ai: ai,
           category: category,
           brand: brand,
+<<<<<<< HEAD
           keys: keys
+=======
+          keys: keysvalue
+>>>>>>> feature-BE/api
         },
       }
     );
