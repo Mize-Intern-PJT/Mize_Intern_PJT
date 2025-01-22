@@ -1,9 +1,6 @@
 package com.mize.login;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,8 +12,12 @@ public class LoginController {
         userDAO = new UserDAO();
     }
 
-    @PostMapping("/login")
-    public String login(@RequestBody User user) {
+    @GetMapping("/login")
+    public String login(@RequestParam String userId, @RequestParam String password) {
+        User user = new User();
+        user.setUserId(userId);
+        user.setPassword(password);
+
         boolean isAuthenticated = userDAO.authenticate(user);
 
         if (isAuthenticated) {
@@ -24,11 +25,5 @@ public class LoginController {
         } else {
             return "failed";
         }
-    }
-
-    @RequestMapping(value = "/user", method = RequestMethod.GET)
-    public String requestMethodName(@RequestParam String param) {
-        // 여기서 param을 사용하여 작업을 수행합니다
-        return "Received param: " + param;
     }
 }
