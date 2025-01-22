@@ -1,2 +1,4 @@
-com\mize\iotcontroller\YourApplication.class
-com\mize\iotcontroller\SwaggerConfig.class
+com\mize\login\User.class
+com\mize\login\LoginController.class
+com\mize\login\UserDAO.class
+com\mize\DemoApplication.class
