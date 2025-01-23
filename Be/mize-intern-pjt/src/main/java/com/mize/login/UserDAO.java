@@ -1,30 +1,35 @@
 package com.mize.login;
 
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+import com.mize.login.User;
+
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+@Repository
 public class UserDAO {
 
-    private static final String dburl = "jdbc:oracle:thin:@localhost:1521:xe";  // DB URL
-    private static final String userid = "cyy";  // 사용자명
-    private static final String password = "1234";  // 비밀번호
+    private final JdbcTemplate jdbcTemplate;
 
-    // 데이터베이스 연결 메소드
-    private Connection connect() throws Exception {
-        Class.forName("oracle.jdbc.driver.OracleDriver");
-        return DriverManager.getConnection(dburl, userid, password);
+    public UserDAO(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
     }
 
     public boolean authenticate(User user) {
-        try (Connection connection = connect();
-             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM users WHERE userid = ? AND password = ?")) {
+        String query = "SELECT * FROM users WHERE userid = ? AND password = ?";
+        String userid = user.getUserId();
+        String password = user.getPassword();
 
-            preparedStatement.setString(1, user.getUserId());
-            preparedStatement.setString(2, user.getPassword());
+        try (Connection connection = jdbcTemplate.getDataSource().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+
+            preparedStatement.setString(1, userid);
+            preparedStatement.setString(2, password);
+
             ResultSet resultSet = preparedStatement.executeQuery();
-
             return resultSet.next();
         } catch (Exception e) {
             e.printStackTrace();

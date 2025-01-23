@@ -4,7 +4,7 @@ public class User {
     private String userId;
     private String password;
 
-    // Getters and setters
+    // Getter 및 Setter
     public String getUserId() {
         return userId;
     }
