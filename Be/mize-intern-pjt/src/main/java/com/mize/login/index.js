@@ -1,9 +1,9 @@
-require("dotenv").config(); // .env 파일의 변수 로드
+const path = require("path");
+require('dotenv').config({ path: path.resolve(__dirname, 'db.env') });
 const express = require("express");
 const oracledb = require("oracledb");
 const https = require("https");
 const fs = require("fs");
-const path = require("path");
 const cors = require("cors");
 const app = express();
 
