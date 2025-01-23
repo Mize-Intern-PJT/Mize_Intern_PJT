@@ -7,46 +7,28 @@ import java.sql.ResultSet;
 
 public class UserDAO {
 
-    private Connection connect(){
-        Connection connection = null;
-        try{
-            String url = "jdbc:oracle:thin:@localhost:1521:xe";
-            String user = "cyy";
-            String password = "1234";
-            connection = DriverManager.getConnection(url, user, password);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-        return connection;
+    private static final String dburl = "jdbc:oracle:thin:@localhost:1521:xe";  // DB URL
+    private static final String userid = "cyy";  // 사용자명
+    private static final String password = "1234";  // 비밀번호
+
+    // 데이터베이스 연결 메소드
+    private Connection connect() throws Exception {
+        Class.forName("oracle.jdbc.driver.OracleDriver");
+        return DriverManager.getConnection(dburl, userid, password);
     }
 
-    public boolean authenticate(User user){
-        Connection connection = connect();
-        boolean isAuthenticated = false;
+    public boolean authenticate(User user) {
+        try (Connection connection = connect();
+             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM users WHERE userid = ? AND password = ?")) {
 
-        try{
-            String query = "SELECT * FROM users WHERE userid = ? AND password = ?";
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, user.getUserId());
             preparedStatement.setString(2, user.getPassword());
-
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            if (resultSet.next()) {
-                isAuthenticated = true;
-
-            }
-
-            resultSet.close();
-            preparedStatement.close();
-            connection.close();
-
-        }
-        catch(Exception e){
+            return resultSet.next();
+        } catch (Exception e) {
             e.printStackTrace();
+            return false;
         }
-        return isAuthenticated;
     }
 }
-
