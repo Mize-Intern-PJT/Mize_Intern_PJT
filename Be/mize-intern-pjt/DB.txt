@@ -1,0 +1,11 @@
+CREATE TABLE users(
+userid varchar2(20) PRIMARY KEY,
+password varchar2(20) NOT null
+);
+
+ALTER TABLE USERS MODIFY password int;
+
+INSERT INTO users (userid, password)
+VALUES ('user', '1234');
+
+SELECT * FROM USERS u ;
