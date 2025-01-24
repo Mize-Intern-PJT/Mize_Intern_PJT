@@ -1,4 +1,6 @@
-require('dotenv').config({ path: require('path').resolve(__dirname, 'db.env') });
+require("dotenv").config({
+  path: require("path").resolve(__dirname, "db.env"),
+});
 const oracledb = require("oracledb");
 
 const dbConfig = {
@@ -9,7 +11,7 @@ const dbConfig = {
 
 async function testConnection() {
   let connection;
-  
+
   try {
     connection = await oracledb.getConnection(dbConfig);
     console.log("Connection successful!");
@@ -26,5 +28,5 @@ async function testConnection() {
   }
 }
 
-// 테스트 실행
+
 testConnection();

@@ -17,14 +17,14 @@ app.post("/spotcontrol", async (req, res) => {
   //const keysvalue = JSON.stringify([keys]);
   //console.log("keysvalue:", keysvalue);
 
-  // 검증
+  
   if (!agt || !me || !ai || !category || !brand || keys === undefined) {
     console.error("Invalid request body:", req.body);
     return res.status(400).send("Invalid request body");
   }
 
   function getTime() {
-    return Math.floor(Date.now() / 1000).toString(); // UNIX 타임스탬프 (초 단위)
+    return Math.floor(Date.now() / 1000).toString();
   }
 
   function getSign(method, params, time, appkey, apptoken, userid, usertoken) {
@@ -96,7 +96,7 @@ app.post("/spotcontrol", async (req, res) => {
           ),
           userid: "8390501",
           appkey: "CWNu6tF1jpZ1eD9s36IA6A",
-          time: timestamp, // UNIX 타임스탬프 사용
+          time: timestamp, 
         },
         params: {
           agt: agt,
@@ -124,10 +124,10 @@ app.post("/spotcontrol", async (req, res) => {
 // mkcert로 생성한 인증서 경로
 const httpsOptions = {
   key: fs.readFileSync(
-    path.join(__dirname, "../../../../../../localhost+3-key.pem") // 정확한 경로로 수정
+    path.join(__dirname, "../../../../../../localhost+3-key.pem") 
   ),
   cert: fs.readFileSync(
-    path.join(__dirname, "../../../../../../localhost+3.pem") // 정확한 경로로 수정
+    path.join(__dirname, "../../../../../../localhost+3.pem") 
   ),
 };
 
