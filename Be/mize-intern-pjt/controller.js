@@ -7,7 +7,7 @@ const port = 3000;
 app.use(bodyParser.json());
 
 app.post('/controller', async (req, res) => {
-  const apiUrl = 'https://api.us.ilifesmart.com/app/api.EpSet'; // 실제 IoT 기기 API URL
+  const apiUrl = 'https://api.us.ilifesmart.com/app/api.EpSet';
   const requestData = req.body;
   
   try {

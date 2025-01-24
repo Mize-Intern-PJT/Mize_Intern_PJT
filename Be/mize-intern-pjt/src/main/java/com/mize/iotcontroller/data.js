@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.get("/data", async (req, res) => {
   function getTime() {
-    return Math.floor(Date.now() / 1000).toString(); // UNIX 타임스탬프 (초 단위)
+    return Math.floor(Date.now() / 1000).toString(); 
   }
 
   function getSign(method, time, appkey, apptoken, userid, usertoken) {
@@ -45,7 +45,7 @@ app.get("/data", async (req, res) => {
           ),
           userid: "8390501",
           appkey: "CWNu6tF1jpZ1eD9s36IA6A",
-          time: timestamp, // UNIX 타임스탬프 사용
+          time: timestamp,
         },
       }
     );
@@ -59,11 +59,10 @@ app.get("/data", async (req, res) => {
 
 const httpsOptions = {
   key: fs.readFileSync(
-    path.join(__dirname, "../../../../../../localhost+3-key.pem") // 정확한 경로로 수정
+    path.join(__dirname, "../../../../../../localhost+3-key.pem") 
   ),
   cert: fs.readFileSync(
-    path.join(__dirname, "../../../../../../localhost+3.pem") // 정확한 경로로 수정
-  ),
+    path.join(__dirname, "../../../../../../localhost+3.pem"))
 };
 
 // const PORT = process.env.PORT || 3009;
