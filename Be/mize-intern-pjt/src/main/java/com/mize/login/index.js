@@ -74,5 +74,5 @@ const httpsOptions = {
 
 // 서버 실행
 https.createServer(httpsOptions, app).listen(port, '0.0.0.0', () => {
-  console.log(`HTTPS API endpoint available at https://192.168.0.xx:${port}/login`);
+  console.log(`HTTPS API endpoint available at https://192.168.0.90:${port}/login`);
 });
